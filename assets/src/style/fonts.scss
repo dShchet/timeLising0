@@ -1,0 +1,26 @@
+
+// Proxima Nova
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: regular;
+    src: 
+    // url("fonts/SamplinaNeue.eot?") format("eot"),
+    // url("fonts/SamplinaNeue.woff2") format("woff2"),
+    // url("fonts/SamplinaNeue.woff") format("woff"),
+    // url("fonts/SamplinaNeue.svg#Samplina_Neue") format("svg"),
+    url("../fonts/Proxima_Nova.ttf") format("truetype");
+}
+
+// Proxima Nova - Semibold
+@font-face {
+    font-family: "Proxima Nova - Semibold";
+    font-weight: bold;
+    src: 
+    // url("fonts/SamplinaNeue.eot?") format("eot"),
+    // url("fonts/SamplinaNeue.woff2") format("woff2"),
+    // url("fonts/SamplinaNeue.woff") format("woff"),
+    // url("fonts/SamplinaNeue.svg#Samplina_Neue") format("svg"),
+    url("../fonts/Proxima_Nova_Bold.otf") format("opentype");
+}
+
+

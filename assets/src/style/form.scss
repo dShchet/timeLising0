@@ -1,0 +1,88 @@
+
+.form-group {
+    margin-bottom: 19px;
+  }
+  .invalid-feedback {
+    position: absolute;
+    text-align: right;
+    margin-top: 0rem;
+  }
+  .btn {
+    font-family: "Proxima Nova - Semibold";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .form-group {
+    position: relative;
+  }
+  .form-group-last {
+    margin-bottom: 49px;
+  }
+  
+  /*form-range*/
+  .form-control-range {
+    margin: 14px 0px 7px;
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    border-radius: 3px;
+    background-color: #dedede;
+    height: 5px;
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .form-control-range:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .form-control-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 7px;
+    background-color: #019c5a;
+    cursor: pointer;
+    /* Cursor on hover */
+  }
+  .form-control-range::-moz-range-thumb {
+    width: 13px;
+    height: 13px;
+    border-radius: 7px;
+    background-color: #019c5a;
+    cursor: pointer;
+    /* Cursor on hover */
+  }
+  .range_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #aaaaaa;
+    font-family: "Proxima Nova";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20.75px;
+  }
+  .range_from,
+  .range_now,
+  .range_to{
+    text-align: center;
+    display: block;
+    width: 24px;}
+  .range_now {
+    color: #050505;    
+  }
+  .range_to {}

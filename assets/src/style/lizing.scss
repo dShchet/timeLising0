@@ -1,0 +1,190 @@
+.lizing {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0px auto;
+    padding: 0px 15px;
+  }
+  .lising_nav {
+    margin: 28px auto 0px;
+  }
+  .lising_left {
+    float: left;
+  }
+  .lising_nav a {
+    color: #808080;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 33px;
+    display: inline-block;
+    margin-right: 15px;
+    border-bottom: 1px solid #fdfdfd;
+    text-decoration: none;
+  }
+  .lising_nav a.active {
+    color: #019c5a;
+    font-family: "Proxima Nova - Semibold";
+    font-weight: 600;
+    border-color: #019c5a;
+  }
+  .lising_right {
+    float: right;
+  }
+  @media(min-width: 0px) {
+    .lising_right,
+    .lising_left {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .lising_left {
+      margin-bottom: 15px;
+    }
+  }
+  @media(min-width: 768px) {
+    .lising_right,
+    .lising_left {
+      display: block;
+      width: auto;
+    }
+    .lising_left {
+      float: left;
+    }
+    .lising_right {
+      float: right;
+    }
+  }
+  .lising_right>p {
+    color: #717171;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 15px;
+    line-height: 34px;
+  }
+  .lising_right .btn-group-toggle {
+    height: 30px;
+    vertical-align: inherit;
+  }
+  .lising_right .btn-secondary:not(:disabled):not(.disabled):active,
+  .lising_right .btn {
+    line-height: 17px;
+    padding: 6px 12px;
+    background-color: #fff;
+    border-color: #019c5a;
+    color: #019c5a;
+  }
+  .lising_right .btn-secondary:not(:disabled):not(.disabled).active {
+    background-color: #019c5a;
+    border-color: #019c5a;
+    color: #fff;
+  }
+  .lising_right .btn-secondary:not(:disabled):not(.disabled):active:focus,
+  .lising_right .btn-secondary:not(:disabled):not(.disabled).active:focus,
+  .lising_right .btn-secondary:focus {
+    box-shadow: none;
+  }
+.lizing .table {
+    margin-bottom: 32px;
+  }
+  .lizing {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+.lising_nav {
+  margin: 28px auto 0px;
+}
+.lising_left {
+  float: left;
+}
+.lising_nav a {
+  color: #808080;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 33px;
+  display: inline-block;
+  margin-right: 15px;
+  border-bottom: 1px solid #fdfdfd;
+  text-decoration: none;
+}
+.lising_nav a.active {
+  color: #019c5a;
+  font-family: "Proxima Nova - Semibold";
+  font-weight: 600;
+  border-color: #019c5a;
+}
+.lising_right {
+  float: right;
+}
+@media(min-width: 0px) {
+  .lising_right,
+  .lising_left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .lising_left {
+    margin-bottom: 15px;
+  }
+}
+@media(min-width: 768px) {
+  .lising_right,
+  .lising_left {
+    display: block;
+    width: auto;
+  }
+  .lising_left {
+    float: left;
+  }
+  .lising_right {
+    float: right;
+  }
+}
+.lising_right>p {
+  color: #717171;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 15px;
+  line-height: 34px;
+}
+.lising_right .btn-group-toggle {
+  height: 30px;
+  vertical-align: inherit;
+}
+.lising_right .btn-secondary:not(:disabled):not(.disabled):active,
+.lising_right .btn {
+  line-height: 17px;
+  padding: 6px 12px;
+  background-color: #fff;
+  border-color: #019c5a;
+  color: #019c5a;
+}
+.lising_right .btn-secondary:not(:disabled):not(.disabled).active {
+  background-color: #019c5a;
+  border-color: #019c5a;
+  color: #fff;
+}
+.lising_right .btn-secondary:not(:disabled):not(.disabled):active:focus,
+.lising_right .btn-secondary:not(:disabled):not(.disabled).active:focus,
+.lising_right .btn-secondary:focus {
+  box-shadow: none;
+}
+.lizing .table {
+  margin-bottom: 32px;
+}
+.pagin>p {
+    color: #717171;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    float: left;
+    margin-right: 12px;
+    display: inline-block;
+  }

@@ -1,0 +1,398 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <!-- Useful meta tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="robots" content="index, follow, noodp">
+        <meta name="googlebot" content="index, follow">
+        <meta name="google" content="notranslate">
+        <meta name="format-detection" content="telephone=no">
+        
+        <link href="css/main.css" rel="stylesheet" />
+        <link href="css/my.css" rel="stylesheet" />
+        
+        <title>Home</title>
+    </head>
+    <body>
+        <div class="container">
+        
+        </div>
+        <header class="header">
+            <div class="header_top container"></div>
+            <div class="header_menu">
+                <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+                  <div class="container p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                   <li class="nav-item active">
+                     <a class="nav-link" href="#">Договоры<span class="sr-only">(current)</span></a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Заявки</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Запросы</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Справка</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Профиль</a>
+                   </li>
+                  </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+        </header>
+        <div class="container dog_1">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="javascript:void(0);">Договоры</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Договор №87467-125-002 Пр.№ 2.1 от 21.01.2018</li>
+            </ol>
+            <div class="mount">
+                <div class="h4">Договор №87467-125-002 Пр.№ 2.1 от 21.01.2018</div>
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-12">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-8">
+                                    <div class="row">
+                                        <div class="col-xl-12 col-lg-6">
+                                            <div class="h5">Параметры договора</div>
+                                            <div class="form-group">
+                                                <label for="input1">Дата</label>
+                                                <input type="date" class="form-control" id="input1" placeholder=""  required >
+                                                <div class="invalid-feedback">Некорректная дата</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="input2">Номер</label>
+                                                <input type="text" class="form-control" id="input2" placeholder=""  >
+                                                <div class="invalid-feedback">Некорректное значение</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="input3">Срок окончания лизинга</label>
+                                                <input type="date" class="form-control" id="input3" placeholder="" > 
+                                                <div class="invalid-feedback">Некорректная дата</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="input4">Марка</label>
+                                                <input type="text" class="form-control" id="input4" placeholder=""  >
+                                                <div class="invalid-feedback">Некорректное значение</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="input5">Модель</label>
+                                                <input type="text" class="form-control" id="input5" placeholder=""  >
+                                                <div class="invalid-feedback">Некорректное значение</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="input6">ПТС</label>
+                                                <input type="text" class="form-control" id="input6" placeholder=""  >
+                                                <div class="invalid-feedback">Некорректное значение</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="input7">Сумма договора лизинга</label>
+                                                <input type="text" class="form-control" id="input7" placeholder=""  >
+                                                <div class="invalid-feedback">Некорректное значение</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="input8">Авансовый платеж (в процентах)</label>
+                                                <input type="range" class="form-control-range" id="input8" min="0" max="100">
+                                                <div class="range_wrap">
+                                                    <div class="range_from">0</div>
+                                                    <div class="range_now" id="input8_now"></div>
+                                                    <div class="range_to">100</div>
+                                                </div>
+                                                <script>
+                                                    var range_1 = document.getElementById("input8");
+                                                    var output_1 = document.getElementById("input8_now");
+                                                    output_1.innerHTML = range_1.value;
+                                                    range_1.oninput = function() {output_1.innerHTML = this.value;} 
+                                                </script>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="input9">Авансовый платеж (сумма в рублях)</label>
+                                                <input type="number" class="form-control" id="input9"  min="0" placeholder=""  >
+                                                <div class="invalid-feedback">Некорректное значение</div>
+                                            </div>
+                                            <div class="form-group form-group-last">
+                                                <label for="input10">Срок договора лизинга</label>
+                                                <input type="range" class="form-control-range" id="input10" min="0" max="100">
+                                                <div class="range_wrap">
+                                                    <div class="range_from">0</div>
+                                                    <div class="range_now" id="input10_now"></div>
+                                                    <div class="range_to">100</div>
+                                                </div>
+                                                <script>
+                                                    var range_2 = document.getElementById("input10");
+                                                    var output_2 = document.getElementById("input10_now");
+                                                    output_2.innerHTML = range_2.value;
+                                                    range_2.oninput = function() {output_2.innerHTML = this.value;} 
+                                                </script>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-lg-6">
+                                            <div class="h5">Взаиморасчеты</div>
+                                            <div class="form-group">
+                                                <label >Акт сверки взаиморасчетов за период</label>
+                                                <div class="dateLine">
+                                                    <span>С</span>
+                                                    <input type="date" class="form-control" id="input11"  placeholder=""  >
+                                                    <span>ПО</span>
+                                                    <input type="date" class="form-control" id="input12"  placeholder=""  >
+                                                </div>
+                                                <a href="javascript:void(0);" class="down">Скачать</a>
+                                                <div class="invalid-feedback">Некорректное значение</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label >Акт сверки взаиморасчетов за период</label>
+                                                <div class="dateLine">
+                                                    <span>С</span>
+                                                    <input type="date" class="form-control" id="input13"  placeholder=""  >
+                                                    <span>ПО</span>
+                                                    <input type="date" class="form-control" id="input14"  placeholder=""  >
+                                                </div>
+                                                <a href="javascript:void(0);" class="down">Скачать</a>
+                                                <div class="invalid-feedback">Некорректное значение</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label >Акт сверки взаиморасчетов за период</label>
+                                                <div class="dateLine">
+                                                    <span>С</span>
+                                                    <input type="date" class="form-control" id="input15"  placeholder=""  >
+                                                    <span>ПО</span>
+                                                    <input type="date" class="form-control" id="input16"  placeholder=""  >
+                                                </div>
+                                                <a href="javascript:void(0);" class="down">Скачать</a>
+                                                <div class="invalid-feedback">Некорректное значение</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-4">
+                                    <div class="h5">Страхование</div>
+                                    <div class="form-group">
+                                        <label for="input17"># полиса</label>
+                                        <input type="text" class="form-control" id="input17" placeholder=""  required >
+                                        <div class="invalid-feedback">Некорректная значение</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input18">Вариант страхования</label>
+                                        <input type="text" class="form-control" id="input18" placeholder=""  >
+                                        <div class="invalid-feedback">Некорректное значение</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input19">Размер франшизы</label>
+                                        <input type="number" class="form-control" id="input19" placeholder="30000" > 
+                                        <div class="invalid-feedback">Некорректная значение</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input20">Страховая компания</label>
+                                        <input type="text" class="form-control" id="input20" placeholder='ПАО "РЕСО"'  >
+                                        <div class="invalid-feedback">Некорректное значение</div>
+                                    </div>
+                                    <div class="form-group form-group-last">
+                                        <label for="input21">Контактный телефон</label>
+                                        <input type="tel" class="form-control" id="input21" placeholder=""  >
+                                        <div class="invalid-feedback">Некорректное значение</div>
+                                    </div>
+                                    <div class="h5">Скан-копии документов</div>
+                                    <div class="textBl">
+                                        <div>
+                                            <p>ПТС VIN YTHBVVB0000210101</p>
+                                            <a href="javascript:void(0);" class="down">Скачать</a>
+                                        </div>
+                                        <div>
+                                            <p>Договор купли-продажи</p>
+                                            <a href="javascript:void(0);" class="down">Скачать</a>
+                                        </div>
+                                        <div>
+                                            <p>Акт приемки-передачи</p>
+                                            <a href="javascript:void(0);" class="down">Скачать</a>
+                                        </div>
+                                        <div>
+                                            <p>Договор лизинга</p>
+                                            <a href="javascript:void(0);" class="down">Скачать</a>
+                                        </div>
+                                        <div>
+                                            <p>Полис КАСКО</p>
+                                            <a href="javascript:void(0);" class="down">Скачать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" tableBl col-xl-6 col-lg-12">
+                            <p class="h5 float-left">График платежей</p>
+                            <button class="btn btn-sm btn-outline-primary float-right">Скачать</button>
+                            <button class="btn btn-sm btn-outline-primary float-right">Скрыть исполненные заявки</button>
+                            <table class="table table-bordered table_dog-1">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Дата</th>
+                                        <th scope="col">Авансовый платеж</th>
+                                        <th scope="col">Лизинговый платеж</th>
+                                        <th scope="col">Факт оплата</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="oplach">
+                                        <th scope="row">1</th>
+                                        <td>04.11.2015</td>
+                                        <td>360 000.00</td>
+                                        <td>30 098.00</td>
+                                        <td>396 098.00</td>
+                                    </tr>
+                                    <tr class="oplach">
+                                        <th scope="row">2</th>
+                                        <td>04.11.2015</td>
+                                        <td></td>
+                                        <td>30 098.00</td>
+                                        <td>396 098.00</td>
+                                    </tr>
+                                    <tr class="oplach">
+                                        <th scope="row">3</th>
+                                        <td>04.11.2015</td>
+                                        <td></td>
+                                        <td>30 098.00</td>
+                                        <td>396 098.00</td>
+                                    </tr>
+                                    <tr class="prosr">
+                                        <th scope="row">4</th>
+                                        <td>04.11.2015</td>
+                                        <td></td>
+                                        <td>30 098.00</td>
+                                        <td>396 098.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>04.11.2015</td>
+                                        <td></td>
+                                        <td>30 098.00</td>
+                                        <td>396 098.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>04.11.2015</td>
+                                        <td></td>
+                                        <td>30 098.00</td>
+                                        <td>396 098.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>04.11.2015</td>
+                                        <td></td>
+                                        <td>30 098.00</td>
+                                        <td>396 098.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>04.11.2015</td>
+                                        <td></td>
+                                        <td>30 098.00</td>
+                                        <td>396 098.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>04.11.2015</td>
+                                        <td></td>
+                                        <td>30 098.00</td>
+                                        <td>396 098.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10</th>
+                                        <td>04.11.2015</td>
+                                        <td></td>
+                                        <td>30 098.00</td>
+                                        <td>396 098.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="abrBL">
+                                <b>Платеж:</b>
+                                <div>
+                                    <div class="box box-w"></div>
+                                    <p>Планируемый</p>
+                                </div>
+                                <div>
+                                    <div class="box box-g"></div>
+                                    <p>Оплаченный</p>
+                                </div>
+                                <div>
+                                    <div class="box box-r"></div>
+                                    <p>Просроченный</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <script>
+                    // FORM VALIDATION
+                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                    (function() {
+                      'use strict';
+                      window.addEventListener('load', function() {
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.getElementsByClassName('needs-validation');
+                        // Loop over them and prevent submission
+                        var validation = Array.prototype.filter.call(forms, function(form) {
+                          form.addEventListener('submit', function(event) {
+                            if (form.checkValidity() === false) {
+                              event.preventDefault();
+                              event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                          }, false);
+                        });
+                      }, false);
+                    })();
+                    // FORM VALIDATION
+                </script>
+            </div>
+        </div>
+        <footer class="footer">
+        <img class="footer_img" src="img/footer_img.png"></img>
+        <div class="container">
+            <a  href="javascript:void(0);" class="footer_logo"></a>
+            <div class="footer_text">Любое предоставление ПАО «ЛИЗИНГ» информации на данном сайте не должно рассматриваться как предоставление неполной или недостоверной информации, в том числе как умолчание или заверение об обстоятельствах, имеющих значение для заключения, исполнения или прекращения сделки, или как обязательство заключить сделку на условиях, изложенных на данном сайте, или как оферта, если только иное прямо не указано на данном сайте.</div>
+            </div>
+        <div class="footer_bottom">
+            <div class="container">© 2018 ПАО «ЛИЗИНГ»</div>
+        </div>
+            </footer>
+            <style>
+            /*стили только если использоуется футер*/
+                @media(min-width: 0px){
+                    .footer{height: 485px;}
+                    body{padding-bottom: 575px;}
+                }
+                @media(min-width: 575px){
+                    .footer{height: 410px;}
+                    body{padding-bottom: 500px;}
+                }
+                @media(min-width: 768px){
+                    .footer{height: 360px;}
+                    body{padding-bottom: 450px;}
+                }
+                @media(min-width: 992px){
+                    .footer{height: 335px;}
+                    body{padding-bottom: 425px;}
+                }
+                @media(min-width: 1230px){
+                    .footer{height: 335px;}
+                    body{padding-bottom: 425px;}
+                }
+            </style>
+    </body>
+    <script src="js/main.js"></script>
+</html>
