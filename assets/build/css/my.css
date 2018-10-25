@@ -2,11 +2,28 @@
 html {
   position: relative;
   min-height: 100%;
-  font-family: "Proxima Nova";
+  
 }
 body {
   background-color: #fdfdfd;
-  min-width: 320px;;
+  min-width: 320px;
+  padding-bottom: 350px;
+  font-family: "Proxima Nova";
+}
+button {
+  outline: none!important
+}
+.btn {
+  line-height: 34px;
+  font-size: 18px;
+}
+.logo {
+  width: 234px;
+  height: 25px;
+  background-image: url(../img/header_logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .mount {
   box-shadow: -7px 9px 32px rgba(29, 29, 29, 0.03);
@@ -19,6 +36,8 @@ body {
   font-size: 19px;
   text-transform: uppercase;
   margin-bottom: 19px;
+  font-family: "Proxima Nova - Semibold";
+
 }
 .h5 {
   margin-bottom: 20px;
@@ -66,6 +85,7 @@ body {
   border: none;
   padding: 17px 10px 33px;
   vertical-align: middle;
+  font-weight: 400;;
 }
 .table.white {
   border-radius: 5px;
@@ -89,10 +109,6 @@ body {
   font-size: 14px;
   line-height: 20.75px;
   padding: 4px 12px;
-}
-
-.step1 .mount {
-  padding-bottom: 71px;
 }
 .dateLine {
   padding: 6px 0px 0px;
@@ -121,32 +137,6 @@ a.down {
   text-decoration: none;
   border-bottom: 1px solid #019c5a;
 }
-.dog_1 .textBl {}
-.dog_1 .textBl div {
-  overflow: auto;
-}
-.dog_1 .textBl p {
-  color: #050505;
-  font-family: "Proxima Nova";
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20.75px;
-  float: left;
-}
-.dog_1 .textBl a {
-  float: right;
-}
-.dog_1 .tableBl {}
-.dog_1 .tableBl .h5 {
-  margin-bottom: 27px;
-}
-.dog_1 .btn-sm {
-  margin-left: 9px;
-  position: relative;
-  top: -3px;
-  margin-bottom: 16px;
-}
-.dog_1 .table_dog-1 {}
 .table_dog-1 {
   border-radius: 4px 4px 0 0;
 }
@@ -158,8 +148,6 @@ a.down {
   font-weight: 400;
   line-height: 20.75px;
 }
-.table_dog-1 tr {}
-.table_dog-1 tr {}
 .table_dog-1 th,
 .table_dog-1 td {
   padding: 5px 10px;
@@ -242,3 +230,241 @@ a.down {
   padding-top: 1px;
   float: left;
 }
+.pageEnter,
+.pageEnter_suc,
+.pageRecovery {
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  display: flex;
+}
+.wrapCenter .mount {
+  padding: 27px 48px;
+  width: 420px;
+}
+@media(max-width: 420px) {
+  .wrapCenter .mount {
+    width: 100%;
+  }
+}
+.wrapCenter .logo {
+  margin-bottom: 43px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.wrapCenter .h5 {
+  text-align: center;
+  font-family: "Proxima Nova - Semibold";
+  font-size: 18px;
+  color: #191919;
+}
+.wrapCenter .btn {
+  margin-bottom: 15px;
+}
+.iconBigCheck {
+  width: 76px;
+  height: 91px;
+  margin: 0px auto 30px;
+  background-image: url(../img/requests_suc.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.textBl div {
+  overflow: auto;
+}
+.textBl p {
+  color: #050505;
+  font-family: "Proxima Nova";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.75px;
+  float: left;
+}
+.textBl a {
+  float: right;
+}
+.requests_suc {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: calc(100% - 133px);
+  min-height: 205px;
+}
+.requests_suc .wrap {
+  width: 272px;
+  font-family: "Proxima Nova";
+  text-align: center;
+}
+.requests_suc p {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+.requests_suc a {
+  font-size: 14px;
+  line-height: 16px;
+}
+.pageEnter_suc {
+  text-align: center;
+}
+.pageEnter_suc p {
+  font-size: 18px;
+  padding: 0px 15px;
+}
+/*.pageProfile,
+.pageDog_1 .mount {
+  margin-bottom: 50px;
+}*/
+.btBlock {
+  padding: 8px 0px;
+}
+.btBlock button {
+  color: #000000;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 38px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-color: transparent;
+  border: none;
+  border-left: 2px solid #ffffff;
+  cursor: pointer;
+}
+.btBlock button.bt-user {
+  background-image: url(../img/bt-user.png);
+}
+.btBlock button.bt-lizTake {
+  background-image: url(../img/bt-lizTake.png);
+}
+.btBlock button.bt-lizGive {
+  background-image: url(../img/bt-lizGive.png);
+}
+.btBlock button.bt-men {
+  background-image: url(../img/bt-men.png);
+}
+.btBlock button.bt-notife {
+  background-image: url(../img/bt-notife.png);
+}
+.btBlock button:hover,
+.btBlock button.active {
+  border-radius: 1px 1px 0 0;
+  background-color: #eefff8;
+  color: #019c5a;
+  font-family: "Proxima Nova - Semibold";
+  font-size: 16px;
+  font-weight: 400;
+  border-left: 2px solid #019c5a;
+}
+.px-30 {
+  padding: 0px 30px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.pageProfile {
+  padding-top: 27px;
+}
+.thead-light {
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #dedede;
+  background-color: #efefef;
+}
+.thead-light th {
+  padding: 6px 35px;
+  font-family: "Proxima Nova - Semibold";
+}
+.table-light {
+  border-radius: 4px;
+  border: 1px solid #dedede;
+  background-color: #ffffff;
+}
+.table-light td {
+  padding: 9px 35px;
+}
+.row-def td {
+  color: #a9a9a9;
+}
+.pageDog_3 .header {
+  margin-bottom: 35px;
+}
+.pageDog_3 .btn {
+  font-size: 16px;
+  line-height: 31px;
+  margin-bottom: 12px;
+}
+.pageDog_3 .down {
+  width: 210px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+@media(max-width: 767px) {
+  .table-light td,
+  .thead-light th {
+    padding: 9px 10px;
+  }
+}
+
+.pageSuccess .wrap{
+  text-align: center;
+  margin: 88px 0px 40px;
+}
+.pageSuccess .wrap p{
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.pageList .table{width: 100%;}
+
+.pageList .btn{
+  color: #fff;
+  padding: 4px 32px;
+  border-radius: 5px;
+  margin-bottom: 8px;;;;}
+.pageList .header{margin-bottom30;
+  margin-bottom: 27px;: }
+.pageList .table.white thead th{
+  padding: 17px 10px 16px;}
+
+.pageList .table td{
+  padding: 36px 10px;}
+
+.pageRefer{}
+.pageRefer .header{
+  margin-bottom: 34px;}
+.pageRefer .h4{    
+  font-family: "Proxima Nova - Semibold";}
+.pageRefer .mount .h4{
+  color: #000000;
+  margin-bottom: 17px;
+  font-size: 18px;}
+.pageRefer .mount{
+  padding: 23px 30px 25px;
+  margin-bottom: 8px;;}
+.pageRefer .mount p{
+  line-height: 24px;}
+.pageRefer .mount .down{
+  color: #019c5a;
+  text-decoration: underline;;}
+.pageRefer .pageRefer .mount{}
+
+
+
+.btn-sr{
+  padding: 6px 50px;
+  border-radius: 7px;
+}
+.pageDashboard{}
+
+.pageRequests{}
+
+
+
+
+
+

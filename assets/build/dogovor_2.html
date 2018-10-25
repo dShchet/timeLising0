@@ -27,7 +27,7 @@
         </div>
         <header class="header">
             <div class="header_top">
-                <div class="header_logo"></div>
+                <div class="logo"></div>
                 <div class="header_right">
                     <div class="callB header_rBtn">
                         <b>+7 (423) 260-50-40</b>
@@ -176,7 +176,7 @@
                 </nav>
             </div>
         </header>
-        <div class="container dog_1">
+        <div class="container dog_2">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="javascript:void(0);">Договоры</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Договор №87467-125-002 Пр.№ 2.1 от 21.01.2018</li>
@@ -309,8 +309,14 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="input18">Вариант страхования</label>
-                                        <input type="text" class="form-control" id="input18" placeholder=""  >
-                                        <div class="invalid-feedback">Некорректное значение</div>
+                                        <select class="form-control" id="input18">
+                                            <option value="С франшизой" selected>С франшизой</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please choose a username.</div>
                                     </div>
                                     <div class="form-group">
                                         <label for="input19">Размер франшизы</label>
@@ -492,29 +498,6 @@
             <div class="container">© 2018 ПАО «ЛИЗИНГ»</div>
         </div>
             </footer>
-            <style>
-            /*стили только если использоуется футер*/
-                @media(min-width: 0px){
-                    .footer{height: 485px;}
-                    body{padding-bottom: 575px;}
-                }
-                @media(min-width: 575px){
-                    .footer{height: 410px;}
-                    body{padding-bottom: 500px;}
-                }
-                @media(min-width: 768px){
-                    .footer{height: 360px;}
-                    body{padding-bottom: 450px;}
-                }
-                @media(min-width: 992px){
-                    .footer{height: 335px;}
-                    body{padding-bottom: 425px;}
-                }
-                @media(min-width: 1230px){
-                    .footer{height: 335px;}
-                    body{padding-bottom: 425px;}
-                }
-            </style>
     </body>
     <script src="js/main.js"></script>
     <script src="js/bootstrap-datepicker.min.js"></script>

@@ -8,7 +8,7 @@
     </head>
     <body>
         //= template/header.html
-        <div class="container dog_1">
+        <div class="container dog_2">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="javascript:void(0);">Договоры</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Договор №87467-125-002 Пр.№ 2.1 от 21.01.2018</li>
@@ -141,8 +141,14 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="input18">Вариант страхования</label>
-                                        <input type="text" class="form-control" id="input18" placeholder=""  >
-                                        <div class="invalid-feedback">Некорректное значение</div>
+                                        <select class="form-control" id="input18">
+                                            <option value="С франшизой" selected>С франшизой</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please choose a username.</div>
                                     </div>
                                     <div class="form-group">
                                         <label for="input19">Размер франшизы</label>

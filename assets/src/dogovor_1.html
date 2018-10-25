@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        //= template/head.html
+        <link rel="stylesheet" href="css/bootstrap-datepicker3.min.css">
+    </head>
+    <body>
+        //= template/header.html
+        <div class="container pageDog_1">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="javascript:void(0);">Заявки</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Договор #0002544 от 21.01.2018</li>
+            </ol>
+            <div class="mount">
+                <form class="needs-validation" novalidate>
+                    <div class="row main">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="h5">Предмет лизинга</div>
+                            <div class="form-group">
+                                <label for="input1">Марка</label>
+                                <input type="text" class="form-control" id="input1" placeholder="Toyota" required>
+                                <div class="invalid-feedback">Некорректная марка</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="input2">Модель</label>
+                                <input type="text" class="form-control" id="input2" placeholder="Camry">
+                                <div class="invalid-feedback">Некорректная модель</div>
+                            </div>
+                            <div class="form-group form-group-last">
+                                <label for="input3">Год выпуска</label>
+                                <input type="number" class="form-control" id="input3" placeholder="2016" min="1900" max="3000">
+                                <div class="invalid-feedback">Некорректный год выпуска</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="h5">Скан-копии документов</div>
+                            <div class="textBl">
+                                <div>
+                                    <p>ПТС VIN YTHBVVB0000210101</p>
+                                    <a href="javascript:void(0);" class="down">Скачать</a>
+                                </div>
+                                <div>
+                                    <p>Акт приемки-передачи</p>
+                                    <a href="javascript:void(0);" class="down">Скачать</a>
+                                </div>
+                                <div class=" form-group-last">
+                                    <p>Договор страхования</p>
+                                    <a href="javascript:void(0);" class="down">Скачать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="h5">Страховка</div>
+                            <div class="form-group">
+                                <label for="input4">Вариант страхования</label>
+                                <select class="form-control" id="input4">
+                                    <option value="С франшизой" selected>С франшизой</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                                <div class="invalid-feedback">Please choose a username.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="input5">Размер франшизы</label>
+                                <input type="number" class="form-control" id="input5" placeholder="30000" > 
+                                <div class="invalid-feedback">Некорректная значение</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="input6">Страховая компания</label>
+                                <input type="text" class="form-control" id="input6" placeholder='ПАО "РЕСО"'  >
+                                <div class="invalid-feedback">Некорректное значение</div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <script>
+                    // FORM VALIDATION
+                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                    (function() {
+                      'use strict';
+                      window.addEventListener('load', function() {
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.getElementsByClassName('needs-validation');
+                        // Loop over them and prevent submission
+                        var validation = Array.prototype.filter.call(forms, function(form) {
+                          form.addEventListener('submit', function(event) {
+                            if (form.checkValidity() === false) {
+                              event.preventDefault();
+                              event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                          }, false);
+                        });
+                      }, false);
+                    })();
+                    // FORM VALIDATION
+                </script>
+            </div>
+        </div>
+        //= template/footer.html
+    </body>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-datepicker.ru.min.js"></script>
+    <script src="js/dogovor_1.js"></script>
+</html>
+

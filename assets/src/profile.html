@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        //= template/head.html
+    </head>
+    <body>
+        //= template/header.html
+        <div class="container pageProfile">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-5 ">
+                    <div class="mount btBlock mb-30">
+                        <button class="bt-user">Пользователь</button>
+                        <button class="bt-lizTake active">Лизингополучатель</button>
+                        <button class="bt-lizGive">Лизингодатель</button>
+                        <button class="bt-men">Менеджер</button>
+                        <button class="bt-notife">Уведомления</button>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-8 col-md-7 px-30">
+                    <div class="row mount">
+                        <div class="col-xl-6 col-md-12">
+                            <form action=""  class="needs-validation" novalidate>
+                                <div class="h5">Пользователь</div>
+                                <div class="form-group">
+                                    <label for="input13">Фамилия</label>
+                                    <input type="text" class="form-control" id="input13" placeholder="Ваша фамилия" required>
+                                    <div class="invalid-feedback">Некорректное значение</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input14">Имя</label>
+                                    <input type="text" class="form-control" id="input14" placeholder="Ваше имя" >
+                                    <div class="invalid-feedback">Некорректное значение</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input15">Отчество</label>
+                                    <input type="text" class="form-control" id="input15" placeholder="Ваше отчество" >
+                                    <div class="invalid-feedback">Некорректное значение</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input16">Должность</label>
+                                    <input type="text" class="form-control" id="input16" placeholder="" >
+                                    <div class="invalid-feedback">Некорректное значение</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input17">Телефон</label>
+                                    <input type="tel" class="form-control" id="input17" placeholder="" >
+                                    <div class="invalid-feedback">Некорректное значение</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input18">Электронная почта</label>
+                                    <input type="email" class="form-control" id="input18" placeholder="" >
+                                    <div class="invalid-feedback">Некорректное значение</div>
+                                </div>
+                                <button class="btn btn-block btn-primary" type="submit">Сохранить</button>
+                            </form>
+                        </div>
+                        <div class="col-xl-6 col-md-0"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            // FORM VALIDATION
+        </script>
+        //= template/footer.html
+    </body>
+    <script src="js/main.js"></script>
+</html>
+
