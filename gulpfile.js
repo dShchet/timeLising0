@@ -131,9 +131,9 @@ gulp.task('image:build', function () {
 });
 
 // удаление каталога build 
-gulp.task('clean:build', function () {
-    del.sync(path.clean);
-});
+// gulp.task('clean:build', function () {
+//     del.sync(path.clean);
+// });
 
 // очистка кэша
 gulp.task('cache:clear', function () {
@@ -142,7 +142,7 @@ gulp.task('cache:clear', function () {
 
 // сборка
 gulp.task('build', [
-    'clean:build',
+    // 'clean:build',
 	'html:build',
     'css:build',
     'js:build',
