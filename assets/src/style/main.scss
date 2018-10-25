@@ -39,8 +39,9 @@
 
 // Подключение своих SCSS файлов
 @import "fonts";
+@import "header";
+@import "footer";
 @import "steps_block";
 @import "lizing";
 @import "form";
-@import "footer";
 @import "my";
