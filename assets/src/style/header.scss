@@ -2,7 +2,8 @@
 .header {
   width: 100%;
   position: relative;
-  z-index: 10;
+  z-index: 20;
+  margin-bottom: 35px;
 }
 .header_top {
   height: 93px;
@@ -34,12 +35,12 @@
   cursor: pointer;
 }
 .header .callB b {
-  font-family: "Proxima Nova - Semibold";
+  font-family: $font_2;
   font-size: 16px;
   font-weight: 400;
 }
 .header .callB p {
-  font-family: "Proxima Nova";
+  font-family: $font_1;
   font-size: 14px;
   font-weight: 400;
   margin: 0px;
@@ -50,7 +51,7 @@
 }
 .header .callB:hover p,
 .header .callB.active p {
-  color: #019c5a;
+  color: $green;
 }
 .header .notifB {
   border-left: 1px solid #efefef;
@@ -60,7 +61,7 @@
   float: left;
   padding: 36px 37px 33px 81px;
   position: relative;
-  font-family: "Proxima Nova";
+  font-family: $font_1;
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
@@ -69,9 +70,9 @@
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background-color: #019c5a;
+  background-color: $green;
   color: #ffffff;
-  font-family: "Proxima Nova - Semibold";
+  font-family: $font_2;
   font-size: 10px;
   font-weight: 400;
   line-height: 14px;
@@ -93,7 +94,7 @@
   float: left;
   position: relative;
   padding: 36px 92px 33px 85px;
-  font-family: "Proxima Nova";
+  font-family: $font_1;
   font-size: 16px;
   font-weight: 400;
   line-height: 20.75px;
@@ -138,7 +139,18 @@
 .header .toggleBt {
   margin-bottom: 25px;
 }
-.header .h4 {}
+.header_shadow {
+  display: none;
+  position: fixed;
+  background: black;
+  opacity: 0.3;
+  width: 100%;
+  height: calc(100% - 94px);
+  top: 94px;
+  left: 0px;
+  z-index: 15;
+  cursor: pointer;
+}
 .header .notifW {
   display: none;
   background-image: url(../img/header_notifW.png);
@@ -159,15 +171,15 @@
 }
 .header .notifW a {
   color: #1a1a1a;
-  font-family: "Proxima Nova";
+  font-family: $font_1;
   font-size: 14px;
   font-weight: 400;
   display: block;
   margin-bottom: 10px;
 }
 .header .notifW a:hover {
-  color: #019c5a;
-  font-family: "Proxima Nova";
+  color: $green;
+  font-family: $font_1;
   font-size: 14px;
   font-weight: 400;
   text-decoration: underline;
@@ -197,7 +209,7 @@
   display: block;
   background-repeat: no-repeat;
   padding-left: 33px;
-  font-family: "Proxima Nova";
+  font-family: $font_1;
   font-size: 14px;
   margin-bottom: 19px;
   font-weight: 400;
@@ -219,7 +231,7 @@
   background-image: url(../img/header_exit-H.png);
 }
 .header_menu {
-  background-color: #019c5a;
+  background-color: $green;
 }
 @media(max-width:1070px) {
   .header .header_right {
@@ -297,27 +309,52 @@
   background-repeat: no-repeat;
 }
 .header_menu .navbar {
-  padding: 2px 0px;
+  padding: 0px;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: #ffffff;
 }
 .nav-link {
   color: #ffffff;
-  font-family: "Proxima Nova";
+  font-family: $font_1;
   font-size: 15px;
   font-weight: 400;
   padding: 9px 16px;
+  line-height: 24px;
 }
 .header_menu .navbar-nav {
   width: 100%;
-  max-width: 597px;
+  max-width: 581px;
   justify-content: space-between;
   padding-left: 5px;
 }
+.navbar-dark .navbar-nav .nav-link{
+  padding-right: 0px;
+  padding-left: 0px;
+  border-bottom: 2px solid $green;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .active > .nav-link{
+  color: #ffffff;
+  border-color:  #fff;
+}
+@media(max-width: 767px){
+  .navbar-dark .navbar-nav .nav-link{
+    border-bottom: 0px solid $green;
+    border-left: 2px solid $green;
+        line-height: 11px;
+    padding-left: 10px;
+  }
+}
+.navbar-dark .navbar-toggler{
+  color: #fff;
+  border-color: transparent;
+}
 .breadcrumb {
   background-color: transparent;
-  padding: 23px 0px 4px;
+  padding: 0px 0px 3px;
+  margin-top: -11px;
 }
 .breadcrumb-item+.breadcrumb-item {
   padding-left: 5px;

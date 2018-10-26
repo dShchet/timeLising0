@@ -1,0 +1,38 @@
+.pageDashboard .h5 {
+  color: #191919;
+  font-family: $font_1;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 39px 0px 30px;
+}
+.pageDashboard .header {
+  margin-bottom: 27px;
+}
+.pageDashboard .mount {
+  padding: 21px 30px;
+  position: relative;
+  margin-bottom: 18px;
+}
+.pageDashboard .carousel-item {
+  min-height: 229px;
+  padding-bottom: 50px;
+}
+.pageDashboard .h2 {
+  line-height: 32px;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+.pageDashboard .carousel-indicators {
+  top: 0px;
+  right: 0px;
+  left: inherit;
+  margin: 0px;
+}
+.pageDashboard .carousel .mount {}
+.pageDashboard .btn {
+  display: block;
+  max-width: 322px;
+  width: 100%;
+  bottom: 3px;
+  left: 3px;
+}

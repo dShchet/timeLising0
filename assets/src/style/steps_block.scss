@@ -22,9 +22,12 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.step_img-1 {
+  background-image: url(../img/step_1.png);
+  border-color: $green;
+}
 .step_img-2 {
   background-image: url(../img/step_2.png);
-  border-color: #019c5a;
 }
 .step_img-3 {
   background-image: url(../img/step_3.png);
@@ -32,34 +35,41 @@
 .step_img-4 {
   background-image: url(../img/step_4.png);
 }
-.step_img-1,
-.stepBlock_2 .step_img-2,
+.stepBlock_2 .step_img-1,
+.stepBlock_3 .step_img-1,
 .stepBlock_3 .step_img-2,
-.stepBlock_3 .step_img-3,
+.stepBlock_4 .step_img-1,
 .stepBlock_4 .step_img-2,
 .stepBlock_4 .step_img-3,
-.stepBlock_4 .step_img-4{
-  background-color: #019c5a;
-  border: 1px solid #019c5a;
+.stepBlock_5 .step_img-1,
+.stepBlock_5 .step_img-2,
+.stepBlock_5 .step_img-3,
+.stepBlock_5 .step_img-4{
+  background-color: $green;
+  border: 1px solid $green;
   background-image: url(../img/step_act.png);
 }
-.stepBlock_2 .step_img-3 {
-  background-image: url(../img/step_3_next.png);
-  border-color: #019c5a;
+.stepBlock_2 .step_img-2 {
+  background-image: url(../img/step_2_next.png);
+  border-color: $green;
 }
-.stepBlock_3 .step_img-4{
+.stepBlock_3 .step_img-3 {
+  background-image: url(../img/step_3_next.png);
+  border-color: $green;
+}
+.stepBlock_4 .step_img-4{
   background-image: url(../img/step_4_next.png);
-  border-color: #019c5a;
+  border-color: $green;
 }
 .step_num {
-  font-family: "Proxima Nova - Semibold";
+  font-family: $font_2;
   font-size: 16px;
   font-weight: 400;
   line-height: 20.75px;
   margin: 7px 0px 3px;
 }
 .step_name {
-  font-family: "Proxima Nova";
+  font-family: $font_1;
   font-size: 14px;
   font-weight: 400;
   line-height: 20.75px;

@@ -2,11 +2,73 @@
 <html>
     <head>
         //= template/head.html
+    <title>Home</title>
     </head>
     <body class="pageRequests">
         //= template/header.html
         <div class="container">
-
+            <div class="row">
+                <div class="col-xl-4 col-lg-4">
+                    <form  class="mount"action="">
+                    <div class="h4">НОВЫЙ ЗАПРОС</div>
+                    <div class="form-group">
+                        <label for="input1">Страховой случай</label>
+                        <select class="form-control" id="input1">
+                            <option value="nonselected" selected>Выберите тип запроса</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <div class="invalid-feedback">Не выбрано</div>
+                    </div>
+                    <a href="javascript:void(0);" class="down">Инструкция.docx</a>
+                    <div class="form-group">
+                      <label for="inputH9">Текст запроса</label>
+                      <textarea class="form-control" id="inputH9" rows="7" placeholder="Начните писать"></textarea>
+                      <div class="invalid-feedback">Не заполнено</div>
+                    </div>
+                    <button class="btn btn-sm ">Добавить файл</button>
+                    <button class="btn btn-sm btn-primary">Отправить</button>
+                    </form>
+                </div>
+                <div class=" col-xl-8 col-lg-8">
+                    <div class="mount">
+                    <div class="h4">История запросов</div>
+                    <table class="table white">
+                      <thead>
+                        <tr>
+                          <th scope="col">Дата / тип запроса</th>
+                          <th scope="col">Текст запроса</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <p class="date">01.02.2018</p>
+                            <p>Бухгалтерские документы</p>
+                          </td>
+                          <td>Добрый день. Пожалуйста, сформируйте Акт сверки за период с 01.01.2016 по 31.12.2018.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p class="date">01.02.2018</p>
+                            <p>Бухгалтерские документы</p>
+                          </td>
+                          <td>Добрый день. Пожалуйста, сформируйте Акт сверки за период с 01.01.2016 по 31.12.2018.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p class="date">01.02.2018</p>
+                            <p>Прочее</p>
+                          </td>
+                          <td>А Кокорину ничего не передали, и счет никто не пополнил. Вот это цена всем дружественным песням, которые поют друзья и сторонники Кокориных в Интернете Но даже передачу передать — у него что, родственников нет? Родственники ходят на телевидение, плачут, а сыну элементарные личные вещи передать, положить 5−10 тысяч на лицевой счет — это же, наверное, сделать надо? У Мамаева папа сам по жизни....</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
         </div>
         //= template/footer.html
     </body>

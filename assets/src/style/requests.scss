@@ -1,0 +1,74 @@
+.pageRequests .mount {
+  padding: 24px 30px;
+}
+.pageRequests .btn {
+  color: #000000;
+  border: 1px solid #dedede;
+  background-color: #ededed;
+  padding: 4px 30px;
+  margin-bottom: 15px;
+}
+.pageRequests .btn-primary {
+  float: right;
+  padding: 4px 28px;
+  background-color: $green;
+  border: 1px solid $green;
+  font-family: $font_2;
+  color: #ffffff;
+}
+.pageRequests .form-group {
+  margin-bottom: 8px;
+  margin-top: 21px;
+}
+.pageRequests .table {}
+.pageRequests .table.white thead th {
+  padding: 0px 35px 10px 35px;
+  vertical-align: middle;
+}
+.pageRequests .table.white td {
+  box-shadow: none;
+  line-height: 23px;
+  vertical-align: top;
+  padding: 19px 15px 19px 30px;
+}
+.pageRequests tbody tr {
+  border: 1px solid #dedede;
+}
+.pageRequests td p {
+  margin-bottom: 0px;
+}
+.pageRequests td p.date {
+  color: #6c6c6c;
+  line-height: 19px;
+}
+.pageRequests textarea.form-control {
+  margin-bottom: 18px;
+}
+.pageRequests .table.white th:nth-child(1),
+.pageRequests .table.white td:nth-child(1) {
+  min-width: 200px;
+  padding: 19px 0px 19px 30px;
+}
+@media(max-width: 991px) {
+  .pageRequests .table.white th:nth-child(1),
+  .pageRequests .table.white td:nth-child(1) {
+    min-width: auto;
+    padding: 19px 0px 19px 10px;
+  }
+}
+@media(max-width: 575px) {
+  .pageRequests .table.white th:nth-child(1),
+  .pageRequests .table.white td:nth-child(1) {
+    min-width: auto;
+  }
+  .pageRequests .table.white thead th,
+  .pageRequests .table.white td {
+    padding: 19px 10px 19px 10px;
+  }
+}
+@media(max-width:1229px) {
+  .pageRequests .btn {
+    width: 100%;
+    float: none;
+  }
+}

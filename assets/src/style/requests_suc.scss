@@ -1,0 +1,33 @@
+.pageRequests_suc .header{
+    margin: 0;
+}
+.pageRequests_suc .cont {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: calc(100% - 133px);
+  min-height: 205px;
+}
+.pageRequests_suc .wrap {
+  width: 272px;
+  font-family: $font_1;
+  text-align: center;
+}
+.pageRequests_suc .cont p {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+.pageRequests_suc .cont a {
+  font-size: 14px;
+  line-height: 16px;
+}
+.pageSuccess .wrap {
+  text-align: center;
+  margin: 88px 0px 40px;
+}
+.pageSuccess .wrap p {
+  font-size: 18px;
+  line-height: 20px;
+}

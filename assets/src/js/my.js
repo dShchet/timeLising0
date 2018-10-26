@@ -1,36 +1,29 @@
-
+// <--HEADER
 function toggle(btn,toShow){
     $(btn).on( "click", function() {
-            console.log(1)
         if(!$(btn).hasClass('active')){
             $('.header_pop').hide();
+            $('.header_shadow').show();
             $(toShow).show();
             $('.header_rBtn').removeClass('active');
             $(btn).addClass('active');
-            console.log(2)
         }else{
+            $('.header_shadow').hide();
             $(toShow).hide();
             $(btn).removeClass('active');
-            console.log(3)
         }
     });
 }
-
+$('.header_shadow').click(function(){
+    $('.header_rBtn').removeClass('active');
+    $('.header_pop').hide();
+    $('.header_shadow').hide();
+});
 toggle('.callB', '.callW');
 toggle('.notifB','.notifW');
 toggle('.profB', '.profW');
-// $('.header_pop').hide();
-// $('.profW').show();
-// $('.header_pop').removeClass('active');
-// $(btn).addClass('active');
 
-
-
-
-
-
-
-// СВЯЖИСЬ С НАМИ
+// <--СВЯЖИСЬ С НАМИ
 $('#header_callBt-call').on( "click", function() {
     $('.header_callForm_2').hide();
     $('.header_callForm_1').show();
@@ -47,5 +40,25 @@ $('#header_callBt-msg').on( "click", function() {
 $('.header_callForm_2').hide();
 $('.header_callForm_1').show();
 $('#header_callBt-call').addClass('active');
-// Show Заказать звонок
+// Show Заказать звонок-->
 // СВЯЖИСЬ С НАМИ
+// HEADER-->
+
+
+// <--TEMP для отладки форм
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    var forms = document.getElementsByClassName('needs-validation');
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+// TEMP для отладки форм-->

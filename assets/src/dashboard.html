@@ -2,11 +2,84 @@
 <html>
     <head>
         //= template/head.html
+    <title>Home</title>
     </head>
     <body class="pageDashboard">
         //= template/header.html
         <div class="container">
-
+            <div class="row">
+                <div class="col-xl-9 col-lg-8">
+                    <div class="mount">
+                        <div class="carousel slide" id="carousel" data-ride="carousel" data-interval="5000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel" data-slide-to="1"></li>
+                                <li data-target="#carousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="h2">Специальная акция #1</div>
+                                    <div>Описание специальной акции №1 Описание специальной акции №1 </div>
+                                    <div>Описание специальной акции №1 Описание специальной акции №1 </div>
+                                    <button class="btn btn-primary fixed-bottom">Подать заявку</button>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="h2">Специальная акция #2</div>
+                                    <div>Описание специальной акции №1 Описание специальной акции №1 </div>
+                                    <div>Описание специальной акции №1 Описание специальной акции №1 </div>
+                                    <button class="btn btn-primary fixed-bottom">Подать заявку</button>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="h2">Специальная акция #3</div>
+                                    <div>Описание специальной акции №1 Описание специальной акции №1 </div>
+                                    <div>Описание специальной акции №1 Описание специальной акции №1 </div>
+                                    <button class="btn btn-primary fixed-bottom">Подать заявку</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h5">Возможности</div>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 textCard textCard-su">
+                            <b>Согласование условий сделки онлайн</b>
+                            <p>Согласование условий проведения сделки и подготовка необходимых документов всеми участниками в режиме онлайн.</p>
+                        </div>
+                        <div class="col-md-6 col-xs-12 textCard textCard-fz">
+                            <b>Формирование запросов в лизинговую компанию</b>
+                            <p>Согласование условий проведения сделки и подготовка необходимых документов всеми участниками в режиме онлайн.</p>
+                        </div>
+                        <div class="col-md-6 col-xs-12 textCard textCard-pi">
+                            <b>Просмотр информации по договорам</b>
+                            <p>Согласование условий проведения сделки и подготовка необходимых документов всеми участниками в режиме онлайн.</p>
+                        </div>
+                        <div class="col-md-6 col-xs-12 textCard textCard-nu">
+                            <b>Настройка уведомлений</b>
+                            <p>Согласование условий проведения сделки и подготовка необходимых документов всеми участниками в режиме онлайн.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4">
+                    <div class="mount">
+                        <div class="userBl">
+                            <div class="userBl_img" style="background-image: url(https://placekitten.com/200/300)"></div>
+                            <b>Иванов Николай</b>
+                            <p>Менеджер</p>
+                        </div>
+                        <div class="userBl_time">Вт-Сб: 09:00-18:00</div>
+                        <div class="userBl_tel">+7 (800) 12345 700</div>
+                        <div class="userBl_adr">Московская обл, г Мытищи, Новомытищинский пр-кт, д 1 к 1</div>
+                        <button class="btn btn-sm btn-outline-primary">Написать</button>
+                    </div>
+                    <div class="mount">
+                        <div class="userBl">
+                            <div class="userBl_img" style="background-image: url(https://placekitten.com/50/50)"></div>
+                            <b>Петров Валерий</b>
+                            <p>Руководитель отдела продаж</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline-primary">Написать</button>
+                    </div>
+                </div>
+            </div>
         </div>
         //= template/footer.html
     </body>

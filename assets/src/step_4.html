@@ -2,8 +2,9 @@
 <html lang="en">
     <head>
         //= template/head.html
+    <title>Home</title>
     </head>
-    <body class="step4">
+    <body class="pageStep4">
         //= template/header.html
         <div class="container">
             <ol class="breadcrumb">
@@ -13,9 +14,47 @@
             <div class="stepBlock_4">
                 //= template/steps_block.html
             </div>
-            <div class="mount">
-                <div class="h4">Заявка #000123 от 02.04.2018 </div>
+            <div class="conatiner">
+            <div class="mount iconBL">
+                <div class="iconBigWait"></div>
+                <p>Ваша заявка успешно отправлена!</p>
+            </div>
+            <div class="mount history">
+                <div class="h4">История работы с заявкой </div>
+                <div class="hisBL">
+                    <div class="iconBl iconBl-w"></div>
+                    <div class="date">17.10.2018   19:09</div>
+                    <div class="status">
+                        <b>Статус:</b>Ожидает проверки
+                    </div>
+                    <p>Старт процесса</p>
+                </div>
+                <div class="hisBL">
+                    <div class="iconBl" style="background-image: url(https://placekitten.com/200/300);"></div>
+                    <div class="date">17.10.2018   19:09</div>
+                    <div class="status">
+                        <b>Статус:</b>Банк принял документы на проверку
 
+                    </div>
+                    <p>Документы на выбранный Вами объект недвижимости отправлены на предварительную проверку. Если документы нужно будет доработать или внести корректировки, Вы получите уведомление в личном кабинете</p>
+                </div>
+                <div class="hisBL">
+                    <div class="iconBl" style="background-image: url(https://placekitten.com/777/300);"></div>
+                    <div class="date">17.10.2018   19:09</div>
+                    <div class="status">
+                        <b>Статус:</b>На проверке
+                    </div>
+                    <p>Ваши документы отправлены на проверку</p>
+                </div>
+                <div class="hisBL">
+                    <div class="iconBl iconBl-s"></div>
+                    <div class="date">17.10.2018   19:09</div>
+                    <div class="status">
+                        <b>Статус:</b>Успешно
+                    </div>
+                    <p>Финиш процесса</p>
+                </div>
+            </div>
             </div>
         </div>
         //= template/footer.html

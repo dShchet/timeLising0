@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         //= template/head.html
+    <title>Home</title>
     </head>
     <body>
         //= template/header.html
@@ -9,8 +10,8 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-4 col-md-5 ">
                     <div class="mount btBlock mb-30">
-                        <button class="bt-user">Пользователь</button>
-                        <button class="bt-lizTake active">Лизингополучатель</button>
+                        <button class="bt-user active">Пользователь</button>
+                        <button class="bt-lizTake">Лизингополучатель</button>
                         <button class="bt-lizGive">Лизингодатель</button>
                         <button class="bt-men">Менеджер</button>
                         <button class="bt-notife">Уведомления</button>
@@ -59,26 +60,6 @@
                 </div>
             </div>
         </div>
-        <script>
-            (function() {
-              'use strict';
-              window.addEventListener('load', function() {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function(form) {
-                  form.addEventListener('submit', function(event) {
-                    if (form.checkValidity() === false) {
-                      event.preventDefault();
-                      event.stopPropagation();
-                    }
-                    form.classList.add('was-validated');
-                  }, false);
-                });
-              }, false);
-            })();
-            // FORM VALIDATION
-        </script>
         //= template/footer.html
     </body>
     <script src="js/main.js"></script>
