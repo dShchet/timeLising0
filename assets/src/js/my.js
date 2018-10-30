@@ -1,3 +1,17 @@
+
+$('#chatBtn').click(function(){
+    $('.chatWrap').toggleClass('closed');
+});
+$('#loadBtn').click(function(){
+    $('.shadowBl').toggleClass('load')
+});
+
+
+
+
+
+
+
 // <--HEADER
 function toggle(btn,toShow){
     $(btn).on( "click", function() {

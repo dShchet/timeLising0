@@ -551,12 +551,18 @@ a.down {
 .pageEnter,
 .pageEnter_suc,
 .pageRecovery {
-  align-items: center;
-  justify-content: center;
-  min-height: 100%;
-  display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // min-height: 100%;
+  // display: flex;
 }
-
+.mainPageWrap{    width: 100vw;
+  vertical-align: middle;
+  height: 100vh;
+  display: table-cell;}
+  .pageEnter .wrapCenter,
+  .pageRecovery .wrapCenter
+  {width: 100%;max-width: 420px;margin: 0px auto;}
 .pageEnter_suc {
   text-align: center;
 }
@@ -587,6 +593,15 @@ a.down {
 .pageList .table td {
   padding: 36px 10px;
 }
+
+
+
+
+
+
+
+
+
 
 
 

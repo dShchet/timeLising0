@@ -13,10 +13,28 @@
         <meta name="format-detection" content="telephone=no">
         
         <link href="css/main.css" rel="stylesheet" />
+        <div class="btnBlock" style="position: fixed;z-index: 35;">
+            <button id="chatBtn">1</button>
+            <button id="loadBtn">2</button>
+        </div>
+        <div class="shadowBl">
+            <div class="loadWrap">
+                <p>Подождите идет загрузка</p>
+                <div id="barWrap">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+            </div>
+        </div>
         <!-- <link href="css/my.css" rel="stylesheet" /> -->
     <title>Home</title>
     </head>
-    <body class="pageSuccess">
+    <body>
+        <div class="pageSuccess">
+        
         <header class="header">
             <div class="header_top">
                 <a href="javascript:void(0);" class="logo"></a>
@@ -204,6 +222,44 @@
                 <a href="javascript:void(0);">Список заявок</a>
             </div>
         </div>
+        <div class="chatWrap closed">
+            <div class="chat">
+                <div class="title">Онлайн чат</div>
+                <div class="name">Менеджер Анна</div>
+                <div class="textArea">
+                    <div class="manager">
+                        <div class="img" style="background-image: url(https://placekitten.com/200/300);"></div>
+                        <p>Ок, жду.</p>
+                        <div class="time">Сегодня в 11:53</div>
+                    </div>
+                    <div class="user">
+                        <p>Какая стоимость за усл. ед.?</p>
+                        <div class="time">Сегодня в 11:53</div>
+                    </div>
+                    <div class="user">
+                        <p>Какой-то текст</p>
+                        <div class="time">Сегодня в 11:53</div>
+                    </div>
+                    <div class="manager">
+                        <div class="img" style="background-image: url(https://placekitten.com/200/300);"></div>
+                        <p>В «Яндекс.Такси» теперь можно делиться своим местоположением с таксистами в реальном времени </p>
+                        <div class="time">Сегодня в 11:53</div>
+                    </div>
+                </div>
+                <form action="" class="inputWrap">
+                    <input type="text" placeholder="Напишите сообщение...">
+                    <button class="btn"></button>
+                </form>
+                <div class="btBl">
+                    <button class="bt bt1"></button>
+                    <button class="bt bt2"></button>
+                    <button class="bt bt3"></button>
+                    <button class="bt bt4"></button>
+                </div>
+            </div>
+        </div>
+        <link rel="stylesheet" href="css/my.css">
+        
         <footer class="footer">
             <img class="footer_img" src="img/footer_img.png"></img>
             <div class="container">
@@ -228,6 +284,7 @@
             <img async src="img/header_set-H.png">
             <img async src="img/step_1.png">
         </div>
+    </div>
     </body>
     <script src="js/main.js"></script>
 </html>

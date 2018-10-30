@@ -1,0 +1,217 @@
+.chatWrap {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 30;
+    max-width: 410px;
+    overflow: hidden;
+    min-height: 270px;
+  }
+  .chat {
+    
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 391px;
+    box-shadow: -1px 1px 29px rgba(29, 29, 29, 0.14);
+    border-radius: 5px;
+    border: 1px solid #efefef;
+    transition: right 0.5s ease-in-out;
+    display: block;
+    right: 0px;
+  }
+  .chatWrap.closed{pointer-events: none;}
+  .chatWrap.closed .chat{
+    
+    right: -410px;
+  }
+  .chat .title {
+    color: #000000;
+    font-family: "Proxima Nova - Semibold";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 58.66px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 17px 15px;
+  }
+  .chat .name {
+    height: 44px;
+    background-color: #f9f9f9;
+    color: $green;
+    font-family: "Proxima Nova - Semibold";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: center;
+    padding: 0px 15px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+  }
+  .chat .textArea {
+    width: 100%;
+    padding: 18px 0px 0px;
+    height: 100%;
+    max-height: calc(100% - 329px);
+    overflow: auto;
+  }
+  .chat .time {
+    color: #bdbdbd;
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20.75px;
+    width: 100%;
+    margin: 3px 0px 0px;
+  }
+  .chat .manager {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    margin-bottom: 8px;
+  }
+  .chat .manager p {
+    border-radius: 22px 22px 22px 2px;
+    background-color: $green;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 12px 24px;
+    display: inline-block;
+    margin: 0px 28px 0px 55px;
+  }
+  .chat .manager .img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 17px;
+    left: 16px;
+  }
+  .chat .manager .time {
+    padding-left: 56px;
+  }
+  .chat .user {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    margin-bottom: 8px;
+    padding-right: 15px;
+  }
+  .chat .user p {
+    border-radius: 22px 22px 2px 22px;
+    color: #0a0a0a;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 12px 24px;
+    display: inline-block;
+    margin: 0px 0px 0px 35px;
+    background-color: #f1f1f1;
+    float: right;
+  }
+  .chat .user .time {
+    float: right;
+    text-align: right;
+  }
+  .chat .inputWrap {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 360px;
+  }
+  .chat .inputWrap input {
+    height: 54px;
+    border-radius: 5px;
+    border: 2px solid #ecedf0;
+    background-color: #fafafa;
+    width: calc(100% - 70px);
+    float: left;
+    border-right: none;
+    margin-bottom: 53px;
+    outline: none;
+    padding: 0px 23px 0px;
+    color: #080808;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .chat .inputWrap .btn {
+    width: 66px;
+    height: 54px;
+    background-image: url(../img/chat_inputWrap_btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0 5px 5px 0;
+    border: 2px solid #ecedf0;
+    background-color: #ffffff;
+  }
+  .chat .btBl {
+    display: flex;
+    margin: 0px auto 0px;
+    width: 100%;
+    overflow: auto;
+    padding: 15px;
+    justify-content: space-between;
+    max-width: 337px;
+    position: absolute;
+    bottom: 10px;
+    left: 26px;
+  }
+  .chat .btBl .bt {
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 59px;
+    height: 58px;
+    box-shadow: -7px 9px 18px rgba(29, 29, 29, 0.15);
+  }
+  .chat .bt1 {
+    background-image: url(../img/chat_bt1.png);
+    border-radius: 29px;
+    border: 2px solid $green;
+    background-color: $green;
+  }
+  .chat .bt2 {
+    background-image: url(../img/chat_bt2.png);
+    border-radius: 29px;
+    border: 2px solid $green;
+    background-color: #ffffff;
+  }
+  .chat .bt3 {
+    background-image: url(../img/chat_bt3.png);
+    border-radius: 8px;
+    border: 1px solid $green;
+    background-color: #ffffff;
+  }
+  .chat .bt4 {
+    background-image: url(../img/chat_bt4.png);
+    border: none;
+    border-radius: 8px;
+    background-color: $green;
+  }
+  @media(max-height: 600px) {
+    .chat .title {
+      display: none;
+    }
+    .chat .textArea {
+      max-height: calc(100% - 170px);
+    }
+    .chat .btBl {
+      position: absolute;
+      bottom: -9px;
+      left: 23px;
+    }
+  }
+  
