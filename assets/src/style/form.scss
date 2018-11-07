@@ -1,5 +1,5 @@
 .form-group {
-  margin-bottom: 19px;
+  margin-bottom: 8px;
 }
 .invalid-feedback {
   position: absolute;
@@ -16,7 +16,7 @@
   position: relative;
 }
 .form-group-last {
-  margin-bottom: 49px;
+  margin-bottom: 28px;
 }
 
 /*form-range*/
@@ -65,6 +65,7 @@
   cursor: pointer;
   /* Cursor on hover */
 }
+.form-control{    height: 29px;font-size: 12px;    line-height: 30px;}
 .range_wrap {
   width: 100%;
   display: flex;

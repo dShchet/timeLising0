@@ -4904,10 +4904,11 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%;
   position: relative;
   z-index: 20;
-  margin-bottom: 35px; }
+  margin-bottom: 13px;
+  box-shadow: 4px 16px 29px rgba(29, 29, 29, 0.1); }
 
 .header_top {
-  height: 93px;
+  height: 64px;
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -4919,71 +4920,85 @@ a.text-dark:hover, a.text-dark:focus {
 .header .logo {
   background-image: url(../img/header_logo.png);
   float: left;
-  margin-top: 30px; }
+  margin-top: 17px;
+  width: 191px;
+  height: 25px; }
 
 .header .header_right {
   float: right;
-  width: 781px; }
+  width: 632px; }
+
+.header .adr {
+  display: block;
+  width: calc(100% - 823px);
+  line-height: 14px;
+  margin-bottom: 0px;
+  text-align: center;
+  float: left;
+  font-size: 12px;
+  height: 100%;
+  padding: 24px 10px; }
 
 .header .callB {
   border-left: 1px solid #efefef;
   background-image: url(../img/header_callB.png);
   background-repeat: no-repeat;
-  background-position: 38px center;
-  padding: 23px 37px 21px 86px;
+  background-position: 14px center;
+  padding: 13px 16px 17px 46px;
   float: left;
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  background-size: 20px 20px; }
 
 .header .callB b {
+  font-size: 12px;
+  font-weight: 400;
   font-family: "Proxima Nova - Semibold";
-  font-size: 16px;
-  font-weight: 400; }
+  line-height: 12px; }
 
 .header .callB p {
   font-family: "Proxima Nova";
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  margin: 0px; }
+  margin: 0px;
+  line-height: 13px; }
 
-.header .callB:hover,
-.header .callB.active {
+.header .callB:hover, .header .callB.active {
   background-image: url(../img/header_callB-A.png); }
 
-.header .callB:hover p,
-.header .callB.active p {
+.header .callB:hover p, .header .callB.active p {
   color: #019c5a; }
 
 .header .notifB {
   border-left: 1px solid #efefef;
   background-image: url(../img/header_notifB.png);
   background-repeat: no-repeat;
-  background-position: 35px center;
+  background-position: 14px center;
   float: left;
-  padding: 36px 37px 33px 81px;
+  padding: 22px 19px 21px 47px;
   position: relative;
   font-family: "Proxima Nova";
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
-  cursor: pointer; }
+  cursor: pointer;
+  background-size: 19px 19px; }
 
 .header .notifB .quant {
   width: 13px;
   height: 13px;
   border-radius: 50%;
   background-color: #019c5a;
-  color: #ffffff;
+  color: #fff;
   font-family: "Proxima Nova - Semibold";
   font-size: 10px;
   font-weight: 400;
   line-height: 14px;
   position: absolute;
-  top: 24px;
-  left: 56px;
+  top: 7px;
+  left: 30px;
   text-align: center; }
 
-.header .notifB:hover,
-.header .notifB.active {
+.header .notifB:hover, .header .notifB.active {
   background-image: url(../img/header_notifB-A.png); }
 
 .header .profB {
@@ -4991,18 +5006,18 @@ a.text-dark:hover, a.text-dark:focus {
   border-right: 1px solid #efefef;
   background-image: url(../img/header_profB.png);
   background-repeat: no-repeat;
-  background-position: 42px center;
+  background-position: 18px center;
   float: left;
   position: relative;
-  padding: 36px 92px 33px 85px;
+  padding: 22px 52px 22px 46px;
   font-family: "Proxima Nova";
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 20.75px;
-  cursor: pointer; }
+  cursor: pointer;
+  background-size: 19px 19px; }
 
-.header .profB:hover,
-.header .profB.active {
+.header .profB:hover, .header .profB.active {
   background-image: url(../img/header_profB-A.png); }
 
 .header .profB:after {
@@ -5011,10 +5026,10 @@ a.text-dark:hover, a.text-dark:focus {
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  width: 14px;
-  height: 7px;
-  top: 43px;
-  right: 36px; }
+  width: 10px;
+  height: 6px;
+  top: 29px;
+  right: 19px; }
 
 .header .profB.active:after {
   content: "";
@@ -5028,13 +5043,13 @@ a.text-dark:hover, a.text-dark:focus {
   box-shadow: -19px 27px 35px rgba(29, 29, 29, 0.12);
   border-radius: 0 0 5px 5px;
   border: 1px solid #dedede;
-  background-color: #ffffff;
-  top: 93px;
+  background-color: #fff;
+  top: 64px;
   right: 17px;
   z-index: 20;
   padding: 25px 38px 38px;
   display: none;
-  max-width: 778px;
+  max-width: 629px;
   width: 100%; }
 
 .header .toggleBt {
@@ -5046,8 +5061,8 @@ a.text-dark:hover, a.text-dark:focus {
   background: black;
   opacity: 0.3;
   width: 100%;
-  height: calc(100% - 94px);
-  top: 94px;
+  height: calc(100% - 53px);
+  top: 64px;
   left: 0px;
   z-index: 15;
   cursor: pointer; }
@@ -5061,13 +5076,13 @@ a.text-dark:hover, a.text-dark:focus {
   box-shadow: -19px 27px 35px rgba(29, 29, 29, 0.12);
   border-radius: 0 0 5px 5px;
   border: 1px solid #dedede;
-  background-color: #ffffff;
-  top: 93px;
+  background-color: #fff;
+  top: 64px;
   right: 17px;
   z-index: 20;
   padding: 20px 28px 10px;
   display: none;
-  max-width: 513px;
+  max-width: 461px;
   width: 100%; }
 
 .header .notifW a {
@@ -5094,13 +5109,13 @@ a.text-dark:hover, a.text-dark:focus {
   box-shadow: -19px 27px 35px rgba(29, 29, 29, 0.12);
   border-radius: 0 0 5px 5px;
   border: 1px solid #dedede;
-  background-color: #ffffff;
-  top: 93px;
-  right: 17px;
+  background-color: #fff;
+  top: 64px;
+  right: 16px;
   z-index: 20;
   padding: 24px 32px 6px;
   display: none;
-  max-width: 294px;
+  max-width: 313px;
   width: 100%; }
 
 .header .profW .h4 {
@@ -5114,7 +5129,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 14px;
   margin-bottom: 19px;
   font-weight: 400;
-  color: #000000; }
+  color: #000; }
 
 .header .profW a:hover {
   color: #019b59; }
@@ -5134,34 +5149,33 @@ a.text-dark:hover, a.text-dark:focus {
 .header_menu {
   background-color: #019c5a; }
 
-@media (max-width: 1070px) {
+@media (max-width: 880px) {
   .header .header_right {
     width: 240px; }
   .header .callB {
     padding: 0px;
-    height: 93px;
+    height: 64px;
     width: 80px;
     background-position: center;
     font-size: 0px; }
-  .header .callB b,
-  .header .callB p {
+  .header .callB b, .header .callB p {
     display: none; }
   .header .notifB {
     padding: 0px;
-    height: 93px;
+    height: 64px;
     width: 80px;
     background-position: center;
     font-size: 0px; }
   .header .profB {
     padding: 0px;
-    height: 93px;
+    height: 64px;
     width: 80px;
     background-position: center;
     font-size: 0px; }
   .header .profB:after {
     display: none; } }
 
-@media (max-width: 540px) {
+@media (max-width: 485px) {
   .header_top {
     padding: 2px 5px;
     height: 53px; }
@@ -5183,10 +5197,9 @@ a.text-dark:hover, a.text-dark:focus {
     height: 50px;
     width: 45px;
     border-right: none; }
-  .header .callW,
-  .header .notifW,
-  .header .profW {
-    top: 53px; } }
+  .header .callW, .header .notifW, .header .profW {
+    top: 53px;
+    right: 0px; } }
 
 .navbar-brand {
   background-image: url(../img/header_logo.png);
@@ -5198,19 +5211,19 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0px; }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #ffffff; }
+  color: #fff; }
 
 .nav-link {
-  color: #ffffff;
+  color: #fff;
   font-family: "Proxima Nova";
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   padding: 9px 16px;
-  line-height: 24px; }
+  line-height: 17px; }
 
 .header_menu .navbar-nav {
   width: 100%;
-  max-width: 581px;
+  max-width: 512px;
   justify-content: space-between;
   padding-left: 5px; }
 
@@ -5219,11 +5232,13 @@ a.text-dark:hover, a.text-dark:focus {
   padding-left: 0px;
   border-bottom: 2px solid #019c5a; }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .active > .nav-link {
-  color: #ffffff;
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .active > .nav-link {
+  color: #fff;
   border-color: #fff; }
+
+@media (max-width: 1070px) {
+  .header .adr {
+    display: none; } }
 
 @media (max-width: 767px) {
   .navbar-dark .navbar-nav .nav-link {
@@ -5239,7 +5254,8 @@ a.text-dark:hover, a.text-dark:focus {
 .breadcrumb {
   background-color: transparent;
   padding: 0px 0px 3px;
-  margin-top: -11px; }
+  margin-top: 22px;
+  margin-bottom: 19px; }
 
 .breadcrumb-item + .breadcrumb-item {
   padding-left: 5px; }
@@ -5310,13 +5326,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 .step {
   float: left;
-  padding-left: 85px;
+  padding-left: 61px;
   position: relative;
   min-height: 60px; }
 
 .step_img {
-  width: 57px;
-  height: 57px;
+  width: 45px;
+  height: 45px;
   border-radius: 29px;
   border: 2px solid #c8c8c8;
   background-color: #ffffff;
@@ -5366,16 +5382,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 .step_num {
   font-family: "Proxima Nova - Semibold";
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 20.75px;
-  margin: 7px 0px 3px; }
+  margin: 4px 0px 0px; }
 
 .step_name {
   font-family: "Proxima Nova";
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 400;
-  line-height: 20.75px; }
+  line-height: 14.75px; }
 
 .stepLine {
   position: absolute;
@@ -5385,8 +5401,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 0px) {
   .step {
-    width: 100%;
-    margin-bottom: 20px; }
+    width: 100%; }
   .stepLine {
     display: none; }
   .step:nth-child(4) {
@@ -5400,14 +5415,13 @@ a.text-dark:hover, a.text-dark:focus {
   .stepLine {
     display: block; }
   .stepLine1 {
-    left: 250px;
-    width: 80px;
-    top: 27px; }
+    left: 200px;
+    width: 130px;
+    top: 21px; }
   .stepLine2 {
-    left: 250px;
-    width: 80px;
-    top: 27px;
-    top: 107px; }
+    left: 190px;
+    width: 140px;
+    top: 85px; }
   .stepLine3 {
     display: none; } }
 
@@ -5425,17 +5439,17 @@ a.text-dark:hover, a.text-dark:focus {
   .step {
     min-width: 240px; }
   .stepLine {
-    top: 27px; }
+    top: 22px; }
   .stepLine1 {
-    left: 250px;
-    width: 54px; }
+    left: 190px;
+    width: 124px; }
   .stepLine2 {
-    left: 526px;
-    width: 98px; }
+    left: 476px;
+    width: 158px; }
   .stepLine3 {
     display: block;
-    left: 881px;
-    width: 63px; } }
+    left: 861px;
+    width: 133px; } }
 
 .steps {
   display: block; }
@@ -5446,12 +5460,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 .step:nth-child(3) {
   position: absolute;
-  left: 644px; }
+  left: 656px; }
 
 .step:nth-child(4) {
   position: absolute;
-  left: 960px;
-  min-width: 220px; }
+  left: 1020px;
+  min-width: 170px; }
 
 @media (max-width: 1231px) {
   .steps {
@@ -5463,7 +5477,7 @@ a.text-dark:hover, a.text-dark:focus {
     left: auto; } }
 
 .form-group {
-  margin-bottom: 19px; }
+  margin-bottom: 8px; }
 
 .invalid-feedback {
   position: absolute;
@@ -5480,7 +5494,7 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative; }
 
 .form-group-last {
-  margin-bottom: 49px; }
+  margin-bottom: 28px; }
 
 /*form-range*/
 .form-control-range {
@@ -5525,6 +5539,11 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #019c5a;
   cursor: pointer;
   /* Cursor on hover */ }
+
+.form-control {
+  height: 29px;
+  font-size: 12px;
+  line-height: 30px; }
 
 .range_wrap {
   width: 100%;
@@ -5889,7 +5908,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0px 15px; }
 
 .lising_nav {
-  margin: 28px auto 0px; }
+  margin: 10px auto 0px; }
 
 .lising_left {
   float: left; }
@@ -5936,10 +5955,10 @@ a.text-dark:hover, a.text-dark:focus {
 .lising_right > p {
   color: #717171;
   font-family: "Proxima Nova";
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 12px;
   line-height: 34px; }
 
 .lising_right .btn-group-toggle {
@@ -5967,16 +5986,16 @@ a.text-dark:hover, a.text-dark:focus {
   box-shadow: none; }
 
 .lizing .table {
-  margin-bottom: 32px; }
+  margin-bottom: 23px; }
 
 .pagin > p {
   color: #717171;
   font-family: "Proxima Nova";
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   float: left;
-  margin-right: 12px;
+  margin-right: 20px;
   display: inline-block; }
 
 .dog_2 .tableBl .h5 {
@@ -6304,21 +6323,26 @@ button {
   background-repeat: no-repeat;
   background-position: center; }
 
+label {
+  margin-bottom: 3px;
+  font-size: 12px; }
+
 .mount {
   box-shadow: -7px 9px 32px rgba(29, 29, 29, 0.03);
   border-radius: 5px;
   border: 1px solid #efefef;
   background-color: #ffffff;
-  padding: 27px 30px; }
+  padding: 24px 30px; }
 
 .h4 {
-  font-size: 19px;
+  font-size: 18px;
   text-transform: uppercase;
-  margin-bottom: 19px;
-  font-family: "Proxima Nova - Semibold"; }
+  margin-bottom: 25px;
+  font-family: "Proxima Nova - Semibold";
+  line-height: 19px; }
 
 .h5 {
-  margin-bottom: 20px; }
+  margin-bottom: 13px; }
 
 .page-link {
   padding: 3px 8px; }
@@ -6332,9 +6356,9 @@ button {
 .toggleBt a {
   color: #808080;
   font-family: "Proxima Nova";
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 33px;
+  line-height: 30px;
   display: inline-block;
   margin-right: 15px;
   border-bottom: 1px solid #fdfdfd;
@@ -6349,10 +6373,10 @@ button {
 .table td {
   color: #000000;
   font-family: "Proxima Nova";
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 15px;
-  padding: 28px 10px;
+  line-height: 11px;
+  padding: 15px 10px 14px;
   vertical-align: middle; }
 
 .table p.red {
@@ -6361,9 +6385,10 @@ button {
 
 .table.white thead th {
   border: none;
-  padding: 17px 10px 33px;
+  padding: 4px 10px 25px;
   vertical-align: middle;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 14px; }
 
 .table.white {
   border-radius: 5px; }
@@ -6373,10 +6398,15 @@ button {
   border-bottom: 1px solid #efefef;
   background-color: #ffffff; }
 
+.table.white td:nth-child(1) {
+  padding: 16px 0px; }
+
 .table.white .doc {
-  width: 28px;
+  width: 15px;
   background-image: url(../img/table_doc.png);
-  height: 34px;
+  height: 18px;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: -10px 11px -10px 27px;
   vertical-align: middle;
   display: block; }
@@ -6388,12 +6418,17 @@ button {
   font-family: "Proxima Nova"; }
 
 .dateLine {
-  padding: 6px 0px 0px;
+  padding: 2px 0px 0px;
   display: flex;
   justify-content: space-between; }
 
+.dateLine a.down {
+  padding-top: 9px;
+  height: 21px; }
+
 .dateLine input {
-  width: 100px; }
+  width: calc(50% - 53px);
+  padding: 0.375rem 8px; }
 
 .dateLine input:last-child {
   margin-bottom: 6px; }
@@ -6402,17 +6437,18 @@ button {
   line-height: 34px;
   color: #1a1a1a;
   font-family: "Proxima Nova";
-  font-size: 14px;
+  font-size: 9px;
   font-weight: 400; }
 
 a.down {
   color: #019c5a;
   font-family: "Proxima Nova";
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 11px;
   text-decoration: none;
-  border-bottom: 1px solid #019c5a; }
+  border-bottom: 1px solid #019c5a;
+  height: 12px; }
 
 .abrBL {
   margin-top: 19px;
@@ -6509,9 +6545,9 @@ a.down {
 .textBl p {
   color: #050505;
   font-family: "Proxima Nova";
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 20.75px;
+  line-height: 12.75px;
   float: left; }
 
 .textBl a {
@@ -6852,4 +6888,4 @@ a.down {
   padding: 17px 10px 16px; }
 
 .pageList .table td {
-  padding: 36px 10px; }
+  padding: 13px 10px; }

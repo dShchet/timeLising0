@@ -1,12 +1,12 @@
-
 .header {
   width: 100%;
   position: relative;
   z-index: 20;
-  margin-bottom: 35px;
+  margin-bottom: 13px;
+  box-shadow: 4px 16px 29px rgba(29, 29, 29, 0.1);
 }
 .header_top {
-  height: 93px;
+  height: 64px;
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -18,71 +18,85 @@
 .header .logo {
   background-image: url(../img/header_logo.png);
   float: left;
-  margin-top: 30px;
+  margin-top: 17px;
+  width: 191px;
+  height: 25px;
 }
 .header .header_right {
   float: right;
-  width: 781px;
+  width: 632px;
+}
+.header  .adr{
+  display: block;
+  width: calc(100% - 823px);
+  line-height: 14px;
+  margin-bottom: 0px;
+  text-align: center;
+  float: left;
+  font-size: 12px;
+  height: 100%;
+  padding: 24px 10px;
 }
 .header .callB {
   border-left: 1px solid #efefef;
   background-image: url(../img/header_callB.png);
   background-repeat: no-repeat;
-  background-position: 38px center;
-  padding: 23px 37px 21px 86px;
+  background-position: 14px center;
+  padding: 13px 16px 17px 46px;
   float: left;
   position: relative;
   cursor: pointer;
+  background-size: 20px 20px;;
 }
 .header .callB b {
-  font-family: $font_2;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
+  font-family: "Proxima Nova - Semibold";
+  line-height: 12px;;
 }
 .header .callB p {
-  font-family: $font_1;
-  font-size: 14px;
+  font-family: "Proxima Nova";
+  font-size: 12px;
   font-weight: 400;
   margin: 0px;
+  line-height: 13px;
 }
-.header .callB:hover,
-.header .callB.active {
+.header .callB:hover, .header .callB.active {
   background-image: url(../img/header_callB-A.png);
 }
-.header .callB:hover p,
-.header .callB.active p {
-  color: $green;
+.header .callB:hover p, .header .callB.active p {
+  color: #019c5a;
 }
 .header .notifB {
   border-left: 1px solid #efefef;
   background-image: url(../img/header_notifB.png);
   background-repeat: no-repeat;
-  background-position: 35px center;
+  background-position: 14px center;
   float: left;
-  padding: 36px 37px 33px 81px;
+  padding: 22px 19px 21px 47px;
   position: relative;
-  font-family: $font_1;
-  font-size: 16px;
+  font-family: "Proxima Nova";
+  font-size: 13px;
   font-weight: 400;
   cursor: pointer;
+  background-size: 19px 19px;
 }
 .header .notifB .quant {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background-color: $green;
-  color: #ffffff;
-  font-family: $font_2;
+  background-color: #019c5a;
+  color: #fff;
+  font-family: "Proxima Nova - Semibold";
   font-size: 10px;
   font-weight: 400;
   line-height: 14px;
   position: absolute;
-  top: 24px;
-  left: 56px;
+  top: 7px;
+  left: 30px;
   text-align: center;
 }
-.header .notifB:hover,
-.header .notifB.active {
+.header .notifB:hover, .header .notifB.active {
   background-image: url(../img/header_notifB-A.png);
 }
 .header .profB {
@@ -90,18 +104,18 @@
   border-right: 1px solid #efefef;
   background-image: url(../img/header_profB.png);
   background-repeat: no-repeat;
-  background-position: 42px center;
+  background-position: 18px center;
   float: left;
   position: relative;
-  padding: 36px 92px 33px 85px;
-  font-family: $font_1;
-  font-size: 16px;
+  padding: 22px 52px 22px 46px;
+  font-family: "Proxima Nova";
+  font-size: 13px;
   font-weight: 400;
   line-height: 20.75px;
   cursor: pointer;
+  background-size: 19px 19px;
 }
-.header .profB:hover,
-.header .profB.active {
+.header .profB:hover, .header .profB.active {
   background-image: url(../img/header_profB-A.png);
 }
 .header .profB:after {
@@ -110,10 +124,10 @@
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  width: 14px;
-  height: 7px;
-  top: 43px;
-  right: 36px;
+  width: 10px;
+  height: 6px;
+  top: 29px;
+  right: 19px;
 }
 .header .profB.active:after {
   content: "";
@@ -127,13 +141,13 @@
   box-shadow: -19px 27px 35px rgba(29, 29, 29, 0.12);
   border-radius: 0 0 5px 5px;
   border: 1px solid #dedede;
-  background-color: #ffffff;
-  top: 93px;
+  background-color: #fff;
+  top: 64px;
   right: 17px;
   z-index: 20;
   padding: 25px 38px 38px;
   display: none;
-  max-width: 778px;
+  max-width: 629px;
   width: 100%;
 }
 .header .toggleBt {
@@ -145,8 +159,8 @@
   background: black;
   opacity: 0.3;
   width: 100%;
-  height: calc(100% - 94px);
-  top: 94px;
+  height: calc(100% - 53px);
+  top: 64px;
   left: 0px;
   z-index: 15;
   cursor: pointer;
@@ -160,26 +174,26 @@
   box-shadow: -19px 27px 35px rgba(29, 29, 29, 0.12);
   border-radius: 0 0 5px 5px;
   border: 1px solid #dedede;
-  background-color: #ffffff;
-  top: 93px;
+  background-color: #fff;
+  top: 64px;
   right: 17px;
   z-index: 20;
   padding: 20px 28px 10px;
   display: none;
-  max-width: 513px;
+  max-width: 461px;
   width: 100%;
 }
 .header .notifW a {
   color: #1a1a1a;
-  font-family: $font_1;
+  font-family: "Proxima Nova";
   font-size: 14px;
   font-weight: 400;
   display: block;
   margin-bottom: 10px;
 }
 .header .notifW a:hover {
-  color: $green;
-  font-family: $font_1;
+  color: #019c5a;
+  font-family: "Proxima Nova";
   font-size: 14px;
   font-weight: 400;
   text-decoration: underline;
@@ -193,13 +207,13 @@
   box-shadow: -19px 27px 35px rgba(29, 29, 29, 0.12);
   border-radius: 0 0 5px 5px;
   border: 1px solid #dedede;
-  background-color: #ffffff;
-  top: 93px;
-  right: 17px;
+  background-color: #fff;
+  top: 64px;
+  right: 16px;
   z-index: 20;
   padding: 24px 32px 6px;
   display: none;
-  max-width: 294px;
+  max-width: 313px;
   width: 100%;
 }
 .header .profW .h4 {
@@ -209,11 +223,11 @@
   display: block;
   background-repeat: no-repeat;
   padding-left: 33px;
-  font-family: $font_1;
+  font-family: "Proxima Nova";
   font-size: 14px;
   margin-bottom: 19px;
   font-weight: 400;
-  color: #000000;
+  color: #000;
 }
 .header .profW a:hover {
   color: #019b59;
@@ -231,34 +245,32 @@
   background-image: url(../img/header_exit-H.png);
 }
 .header_menu {
-  background-color: $green;
+  background-color: #019c5a;
 }
-@media(max-width:1070px) {
+@media (max-width: 880px) {
   .header .header_right {
     width: 240px;
   }
   .header .callB {
     padding: 0px;
-    height: 93px;
+    height: 64px;
     width: 80px;
     background-position: center;
     font-size: 0px;
   }
-  .header .callB b,
-  .header .callB p {
+  .header .callB b, .header .callB p {
     display: none;
   }
   .header .notifB {
     padding: 0px;
-    height: 93px;
+    height: 64px;
     width: 80px;
     background-position: center;
     font-size: 0px;
   }
-  .header .notifB .quant {}
   .header .profB {
     padding: 0px;
-    height: 93px;
+    height: 64px;
     width: 80px;
     background-position: center;
     font-size: 0px;
@@ -267,7 +279,7 @@
     display: none;
   }
 }
-@media(max-width:540px) {
+@media (max-width: 485px) {
   .header_top {
     padding: 2px 5px;
     height: 53px;
@@ -296,10 +308,9 @@
     width: 45px;
     border-right: none;
   }
-  .header .callW,
-  .header .notifW,
-  .header .profW {
+  .header .callW, .header .notifW, .header .profW {
     top: 53px;
+    right: 0px;
   }
 }
 .navbar-brand {
@@ -312,53 +323,55 @@
   padding: 0px;
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: #ffffff;
+  color: #fff;
 }
 .nav-link {
-  color: #ffffff;
-  font-family: $font_1;
-  font-size: 15px;
+  color: #fff;
+  font-family: "Proxima Nova";
+  font-size: 14px;
   font-weight: 400;
   padding: 9px 16px;
-  line-height: 24px;
+  line-height: 17px;
 }
 .header_menu .navbar-nav {
   width: 100%;
-  max-width: 581px;
+  max-width: 512px;
   justify-content: space-between;
   padding-left: 5px;
 }
-.navbar-dark .navbar-nav .nav-link{
+.navbar-dark .navbar-nav .nav-link {
   padding-right: 0px;
   padding-left: 0px;
-  border-bottom: 2px solid $green;
+  border-bottom: 2px solid #019c5a;
 }
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .active > .nav-link{
-  color: #ffffff;
-  border-color:  #fff;
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .active > .nav-link {
+  color: #fff;
+  border-color: #fff;
 }
-@media(max-width: 767px){
-  .navbar-dark .navbar-nav .nav-link{
-    border-bottom: 0px solid $green;
-    border-left: 2px solid $green;
-        line-height: 11px;
+@media (max-width: 1070px) {
+  .header .adr{display: none;}
+}
+@media (max-width: 767px) {
+  .navbar-dark .navbar-nav .nav-link {
+    border-bottom: 0px solid #019c5a;
+    border-left: 2px solid #019c5a;
+    line-height: 11px;
     padding-left: 10px;
   }
 }
-.navbar-dark .navbar-toggler{
+.navbar-dark .navbar-toggler {
   color: #fff;
   border-color: transparent;
 }
 .breadcrumb {
   background-color: transparent;
   padding: 0px 0px 3px;
-  margin-top: -11px;
+  margin-top: 22px;
+  margin-bottom: 19px;
 }
-.breadcrumb-item+.breadcrumb-item {
+.breadcrumb-item + .breadcrumb-item {
   padding-left: 5px;
 }
-.breadcrumb-item+.breadcrumb-item::before {
+.breadcrumb-item + .breadcrumb-item::before {
   padding-right: 3px;
 }

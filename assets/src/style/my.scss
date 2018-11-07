@@ -36,24 +36,27 @@ button {outline: none!important}
   background-repeat: no-repeat;
   background-position: center;
 }
-
+label{    
+  margin-bottom: 3px;
+  font-size: 12px;}
 .mount {
   box-shadow: -7px 9px 32px rgba(29, 29, 29, 0.03);
   border-radius: 5px;
   border: 1px solid #efefef;
   background-color: #ffffff;
-  padding: 27px 30px;
+  padding: 24px 30px;
 }
 
 .h4 {
-  font-size: 19px;
+  font-size: 18px;
   text-transform: uppercase;
-  margin-bottom: 19px;
+  margin-bottom: 25px;
   font-family: $font_2;
+  line-height: 19px;
 }
 
 .h5 {
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 .page-link {
@@ -70,9 +73,9 @@ button {outline: none!important}
 .toggleBt a {
   color: #808080;
   font-family: $font_1;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 33px;
+  line-height: 30px;
   display: inline-block;
   margin-right: 15px;
   border-bottom: 1px solid #fdfdfd;
@@ -87,11 +90,11 @@ button {outline: none!important}
 
 .table td {
   color: #000000;
-  font-family: $font_1;
-  font-size: 14px;
+  font-family: "Proxima Nova";
+  font-size: 12px;
   font-weight: 400;
-  line-height: 15px;
-  padding: 28px 10px;
+  line-height: 11px;
+  padding: 15px 10px 14px;
   vertical-align: middle;
 }
 .table p.red {
@@ -100,22 +103,37 @@ button {outline: none!important}
 }
 .table.white thead th {
   border: none;
-  padding: 17px 10px 33px;
+  padding: 4px 10px 25px;
   vertical-align: middle;
   font-weight: 400;
+  font-size: 14px;
 }
 .table.white {
   border-radius: 5px;
 }
+// .table.white .lastTr:after{
+//   content:"";
+// }
+// .table.white .lastTr td{
+//   padding: 16px 10px 22px;
+// }
+// .table.white .lastTr{
+//   position: relative;
+// }
 .table.white td {
   box-shadow: 3px 11px 32px rgba(29, 29, 29, 0.03);
   border-bottom: 1px solid #efefef;
   background-color: #ffffff;
 }
+.table.white td:nth-child(1){
+  padding: 16px 0px;
+}
 .table.white .doc {
-  width: 28px;
+  width: 15px;
   background-image: url(../img/table_doc.png);
-  height: 34px;
+  height: 18px;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: -10px 11px -10px 27px;
   vertical-align: middle;
   display: block;
@@ -129,12 +147,15 @@ button {outline: none!important}
 }
 
 .dateLine {
-  padding: 6px 0px 0px;
+  padding: 2px 0px 0px;
   display: flex;
   justify-content: space-between;
 }
+.dateLine a.down{    padding-top: 9px;
+  height: 21px;}
 .dateLine input {
-  width: 100px;
+  width: calc(50% - 53px);
+  padding: 0.375rem 8px;
 }
 .dateLine input:last-child {
   margin-bottom: 6px;
@@ -143,18 +164,19 @@ button {outline: none!important}
   line-height: 34px;
   color: #1a1a1a;
   font-family: $font_1;
-  font-size: 14px;
+  font-size: 9px;
   font-weight: 400;
 }
 
 a.down {
   color: $green;
   font-family: $font_1;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 11px;
   text-decoration: none;
   border-bottom: 1px solid $green;
+  height: 12px;
 }
 
 .abrBL {
@@ -256,9 +278,9 @@ a.down {
 .textBl p {
   color: #050505;
   font-family: $font_1;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 20.75px;
+  line-height: 12.75px;
   float: left;
 }
 .textBl a {
@@ -600,7 +622,7 @@ a.down {
   padding: 17px 10px 16px;
 }
 .pageList .table td {
-  padding: 36px 10px;
+  padding: 13px 10px;
 }
 
 
