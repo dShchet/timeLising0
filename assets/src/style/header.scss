@@ -26,14 +26,14 @@
   float: right;
   width: 632px;
 }
-.header  .adr{
+.header .adr{
   display: block;
   width: calc(100% - 823px);
   line-height: 14px;
   margin-bottom: 0px;
   text-align: center;
   float: left;
-  font-size: 12px;
+  font-size: 13px;
   height: 100%;
   padding: 24px 10px;
 }
@@ -42,21 +42,23 @@
   background-image: url(../img/header_callB.png);
   background-repeat: no-repeat;
   background-position: 14px center;
-  padding: 13px 16px 17px 46px;
+  padding: 13px 10px 0px 46px;
+  width: 178px;
+  height: 64px;
   float: left;
   position: relative;
   cursor: pointer;
   background-size: 20px 20px;;
 }
 .header .callB b {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   font-family: "Proxima Nova - Semibold";
   line-height: 12px;;
 }
 .header .callB p {
   font-family: "Proxima Nova";
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   margin: 0px;
   line-height: 13px;
@@ -73,7 +75,9 @@
   background-repeat: no-repeat;
   background-position: 14px center;
   float: left;
-  padding: 22px 19px 21px 47px;
+  width: 140px;
+  height: 64px;
+  padding: 22px 19px 0px 47px;
   position: relative;
   font-family: "Proxima Nova";
   font-size: 13px;
@@ -106,12 +110,15 @@
   background-repeat: no-repeat;
   background-position: 18px center;
   float: left;
+  width: 314px;
+  height: 64px;
+  text-align: center;
   position: relative;
-  padding: 22px 52px 22px 46px;
+  padding: 26px 52px 0px 46px;
   font-family: "Proxima Nova";
   font-size: 13px;
   font-weight: 400;
-  line-height: 20.75px;
+  line-height: 14.75px;
   cursor: pointer;
   background-size: 19px 19px;
 }
@@ -152,6 +159,9 @@
 }
 .header .toggleBt {
   margin-bottom: 25px;
+}
+.header_pop label{
+  font-size: 13px;
 }
 .header_shadow {
   display: none;

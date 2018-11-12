@@ -4935,7 +4935,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 0px;
   text-align: center;
   float: left;
-  font-size: 12px;
+  font-size: 13px;
   height: 100%;
   padding: 24px 10px; }
 
@@ -4944,21 +4944,23 @@ a.text-dark:hover, a.text-dark:focus {
   background-image: url(../img/header_callB.png);
   background-repeat: no-repeat;
   background-position: 14px center;
-  padding: 13px 16px 17px 46px;
+  padding: 13px 10px 0px 46px;
+  width: 178px;
+  height: 64px;
   float: left;
   position: relative;
   cursor: pointer;
   background-size: 20px 20px; }
 
 .header .callB b {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   font-family: "Proxima Nova - Semibold";
   line-height: 12px; }
 
 .header .callB p {
   font-family: "Proxima Nova";
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   margin: 0px;
   line-height: 13px; }
@@ -4975,7 +4977,9 @@ a.text-dark:hover, a.text-dark:focus {
   background-repeat: no-repeat;
   background-position: 14px center;
   float: left;
-  padding: 22px 19px 21px 47px;
+  width: 140px;
+  height: 64px;
+  padding: 22px 19px 0px 47px;
   position: relative;
   font-family: "Proxima Nova";
   font-size: 13px;
@@ -5008,12 +5012,15 @@ a.text-dark:hover, a.text-dark:focus {
   background-repeat: no-repeat;
   background-position: 18px center;
   float: left;
+  width: 314px;
+  height: 64px;
+  text-align: center;
   position: relative;
-  padding: 22px 52px 22px 46px;
+  padding: 26px 52px 0px 46px;
   font-family: "Proxima Nova";
   font-size: 13px;
   font-weight: 400;
-  line-height: 20.75px;
+  line-height: 14.75px;
   cursor: pointer;
   background-size: 19px 19px; }
 
@@ -5054,6 +5061,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .header .toggleBt {
   margin-bottom: 25px; }
+
+.header_pop label {
+  font-size: 13px; }
 
 .header_shadow {
   display: none;
@@ -5326,18 +5336,19 @@ a.text-dark:hover, a.text-dark:focus {
 
 .step {
   float: left;
-  padding-left: 61px;
+  padding-top: 30px;
   position: relative;
   min-height: 60px; }
 
 .step_img {
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
+  background-size: 13px;
   border-radius: 29px;
   border: 2px solid #c8c8c8;
   background-color: #ffffff;
   position: absolute;
-  left: 0px;
+  top: 0px;
   background-position: center;
   background-repeat: no-repeat; }
 
@@ -5397,23 +5408,13 @@ a.text-dark:hover, a.text-dark:focus {
   position: absolute;
   height: 1px;
   background-color: #c9c9c9;
-  top: 27px; }
+  top: 30px; }
 
 @media (min-width: 0px) {
-  .step {
-    width: 100%; }
   .stepLine {
     display: none; }
-  .step:nth-child(4) {
-    margin-bottom: 0px; } }
-
-@media (min-width: 768px) {
   .step {
     width: 50%; }
-  .step:nth-child(3) {
-    margin-bottom: 0px; }
-  .stepLine {
-    display: block; }
   .stepLine1 {
     left: 200px;
     width: 130px;
@@ -5421,51 +5422,66 @@ a.text-dark:hover, a.text-dark:focus {
   .stepLine2 {
     left: 190px;
     width: 140px;
-    top: 85px; }
-  .stepLine3 {
-    display: none; } }
+    top: 85px; } }
 
-@media (min-width: 992px) {
+@media (min-width: 575px) {
   .step {
     min-width: auto;
     width: auto;
-    margin-bottom: 0px; }
+    margin-bottom: 0px; } }
+
+@media (min-width: 768px) {
   .stepLine {
-    display: none; } }
+    display: none; }
+  .step:nth-child(3) {
+    margin-bottom: 0px; } }
+
+@media (min-width: 992px) {
+  .stepLine {
+    top: 30px; }
+  .stepLine1 {
+    display: block;
+    left: 130px;
+    width: 130px; }
+  .stepLine2 {
+    display: block;
+    left: 359px;
+    width: 140px; }
+  .stepLine3 {
+    display: block;
+    left: 639px;
+    width: 140px; } }
 
 @media (min-width: 1230px) {
-  .stepLine {
-    display: block; }
   .step {
     min-width: 240px; }
   .stepLine {
     top: 22px; }
   .stepLine1 {
-    left: 190px;
-    width: 124px; }
+    left: 130px;
+    width: 200px; }
   .stepLine2 {
-    left: 476px;
-    width: 158px; }
+    left: 446px;
+    width: 238px; }
   .stepLine3 {
-    display: block;
-    left: 861px;
-    width: 133px; } }
+    left: 831px;
+    width: 203px; } }
 
 .steps {
   display: block; }
 
 .step:nth-child(2) {
   position: absolute;
-  left: 327px; }
+  left: 357px; }
 
 .step:nth-child(3) {
   position: absolute;
-  left: 656px; }
+  left: 716px; }
 
 .step:nth-child(4) {
   position: absolute;
-  left: 1020px;
-  min-width: 170px; }
+  left: 1060px;
+  min-width: 130px; }
 
 @media (max-width: 1231px) {
   .steps {
@@ -6400,6 +6416,9 @@ label {
 
 .table.white td:nth-child(1) {
   padding: 16px 0px; }
+
+.table.white tr:nth-child(1) td {
+  border-top: 1px solid #efefef; }
 
 .table.white .doc {
   width: 15px;
