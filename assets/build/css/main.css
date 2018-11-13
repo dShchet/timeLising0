@@ -4940,7 +4940,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 24px 10px; }
 
 .header .callB {
-  border-left: 1px solid #efefef;
+  border-left: 1px solid transparent;
   background-image: url(../img/header_callB.png);
   background-repeat: no-repeat;
   background-position: 14px center;
@@ -4972,7 +4972,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #019c5a; }
 
 .header .notifB {
-  border-left: 1px solid #efefef;
+  border-left: 1px solid transparent;
   background-image: url(../img/header_notifB.png);
   background-repeat: no-repeat;
   background-position: 14px center;
@@ -5006,8 +5006,8 @@ a.text-dark:hover, a.text-dark:focus {
   background-image: url(../img/header_notifB-A.png); }
 
 .header .profB {
-  border-left: 1px solid #efefef;
-  border-right: 1px solid #efefef;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
   background-image: url(../img/header_profB.png);
   background-repeat: no-repeat;
   background-position: 18px center;
