@@ -5052,11 +5052,11 @@ a.text-dark:hover, a.text-dark:focus {
   border: 1px solid #dedede;
   background-color: #fff;
   top: 64px;
-  right: 17px;
+  right: 15px;
   z-index: 20;
   padding: 25px 38px 38px;
   display: none;
-  max-width: 629px;
+  max-width: 632px;
   width: 100%; }
 
 .header .toggleBt {
@@ -5088,11 +5088,11 @@ a.text-dark:hover, a.text-dark:focus {
   border: 1px solid #dedede;
   background-color: #fff;
   top: 64px;
-  right: 17px;
+  right: 15px;
   z-index: 20;
   padding: 20px 28px 10px;
   display: none;
-  max-width: 461px;
+  max-width: 454px;
   width: 100%; }
 
 .header .notifW a {
