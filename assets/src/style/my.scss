@@ -5,7 +5,7 @@ html {
 body {
   background-color: #fdfdfd;
   min-width: 320px;
-  padding-bottom: 350px;
+  padding-bottom: 240px;
   font-family: $font_1;
 }
 button {outline: none!important}
@@ -125,6 +125,11 @@ label{
   border-bottom: 1px solid #efefef;
   background-color: #ffffff;
 }
+.table.white tr:hover td,
+.table-light tr:hover,
+.table_dog-1 tr:hover{
+  background-color: #e8e8e8;
+}
 .table.white td:nth-child(1){
   padding: 16px 0px;
 }
@@ -141,7 +146,7 @@ label{
   vertical-align: middle;
   display: block;
 }
-
+.table.white tr td:nth-child(1){padding-left: 10px;}
 .btn-sm {
   padding: 4px 12px;
   line-height: 20.75px;
@@ -628,8 +633,9 @@ a.down {
   padding: 13px 10px;
 }
 
-
-
+body,
+.dropdown-menu,
+.form-control{color: #000;}
 
 
 

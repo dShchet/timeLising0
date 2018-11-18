@@ -4908,25 +4908,30 @@ a.text-dark:hover, a.text-dark:focus {
   box-shadow: 4px 16px 29px rgba(29, 29, 29, 0.1); }
 
 .header_top {
-  height: 64px;
+  height: 68px;
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1230px; }
+  max-width: 1230px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
 
 .header .logo {
   background-image: url(../img/header_logo.png);
   float: left;
-  margin-top: 17px;
   width: 191px;
-  height: 25px; }
+  height: 25px;
+  display: flex;
+  align-items: center; }
 
 .header .header_right {
   float: right;
-  width: 632px; }
+  display: flex;
+  align-items: center; }
 
 .header .adr {
   display: block;
@@ -4936,17 +4941,14 @@ a.text-dark:hover, a.text-dark:focus {
   text-align: center;
   float: left;
   font-size: 13px;
-  height: 100%;
-  padding: 24px 10px; }
+  padding: 0px 10px; }
 
 .header .callB {
   border-left: 1px solid transparent;
   background-image: url(../img/header_callB.png);
   background-repeat: no-repeat;
   background-position: 14px center;
-  padding: 13px 10px 0px 46px;
-  width: 178px;
-  height: 64px;
+  padding: 0px 10px 0px 46px;
   float: left;
   position: relative;
   cursor: pointer;
@@ -4955,15 +4957,16 @@ a.text-dark:hover, a.text-dark:focus {
 .header .callB b {
   font-size: 13px;
   font-weight: 400;
-  font-family: "Proxima Nova - Semibold";
-  line-height: 12px; }
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  white-space: nowrap; }
 
 .header .callB p {
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 400;
   margin: 0px;
-  line-height: 13px; }
+  line-height: 16px; }
 
 .header .callB:hover, .header .callB.active {
   background-image: url(../img/header_callB-A.png); }
@@ -4977,11 +4980,11 @@ a.text-dark:hover, a.text-dark:focus {
   background-repeat: no-repeat;
   background-position: 14px center;
   float: left;
-  width: 140px;
-  height: 64px;
-  padding: 22px 19px 0px 47px;
+  padding: 0px 19px 0px 47px;
+  height: auto;
+  width: auto;
   position: relative;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 400;
   cursor: pointer;
@@ -4993,12 +4996,12 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 50%;
   background-color: #019c5a;
   color: #fff;
-  font-family: "Proxima Nova - Semibold";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 14px;
   position: absolute;
-  top: 7px;
+  top: -10px;
   left: 30px;
   text-align: center; }
 
@@ -5012,12 +5015,13 @@ a.text-dark:hover, a.text-dark:focus {
   background-repeat: no-repeat;
   background-position: 18px center;
   float: left;
-  width: 314px;
-  height: 64px;
   text-align: center;
   position: relative;
-  padding: 26px 52px 0px 46px;
-  font-family: "Proxima Nova";
+  padding: 0px 52px 0px 46px;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 14.75px;
@@ -5035,7 +5039,8 @@ a.text-dark:hover, a.text-dark:focus {
   position: absolute;
   width: 10px;
   height: 6px;
-  top: 29px;
+  top: 50%;
+  margin-top: -3px;
   right: 19px; }
 
 .header .profB.active:after {
@@ -5097,7 +5102,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .header .notifW a {
   color: #1a1a1a;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   display: block;
@@ -5105,7 +5110,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .header .notifW a:hover {
   color: #019c5a;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-decoration: underline; }
@@ -5135,7 +5140,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: block;
   background-repeat: no-repeat;
   padding-left: 33px;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   margin-bottom: 19px;
   font-weight: 400;
@@ -5161,10 +5166,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (max-width: 880px) {
   .header .header_right {
-    width: 240px; }
+    height: 100%; }
   .header .callB {
     padding: 0px;
-    height: 64px;
+    height: 100%;
     width: 80px;
     background-position: center;
     font-size: 0px; }
@@ -5172,39 +5177,41 @@ a.text-dark:hover, a.text-dark:focus {
     display: none; }
   .header .notifB {
     padding: 0px;
-    height: 64px;
+    height: 100%;
     width: 80px;
     background-position: center;
     font-size: 0px; }
   .header .profB {
     padding: 0px;
-    height: 64px;
+    height: 100%;
     width: 80px;
     background-position: center;
     font-size: 0px; }
   .header .profB:after {
-    display: none; } }
+    display: none; }
+  .header .notifB .quant {
+    top: 50%;
+    margin-top: -17px;
+    left: 45px; } }
 
 @media (max-width: 485px) {
   .header_top {
     padding: 2px 5px;
     height: 53px; }
   .header .logo {
-    margin-top: 10px;
     width: 164px; }
   .header .header_right {
     width: 145px; }
   .header .callB {
-    height: 50px;
+    height: 100%;
     width: 50px; }
   .header .notifB {
-    height: 50px;
+    height: 100%;
     width: 50px; }
   .header .notifB .quant {
-    left: 28px;
-    top: 9px; }
+    left: 28px; }
   .header .profB {
-    height: 50px;
+    height: 100%;
     width: 45px;
     border-right: none; }
   .header .callW, .header .notifW, .header .profW {
@@ -5225,11 +5232,11 @@ a.text-dark:hover, a.text-dark:focus {
 
 .nav-link {
   color: #fff;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   padding: 9px 16px;
-  line-height: 17px; }
+  line-height: 21px; }
 
 .header_menu .navbar-nav {
   width: 100%;
@@ -5278,15 +5285,10 @@ a.text-dark:hover, a.text-dark:focus {
   bottom: 0;
   width: 100%;
   background-color: #626862;
-  padding: 28px 0px 0px;
-  height: 335px;
-  overflow: hidden; }
-
-.footer_img {
-  height: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0px; }
+  padding: 50px 0px 0px;
+  height: 220px;
+  overflow: hidden;
+  background: url(../img/footer_img.png); }
 
 .footer_logo {
   width: 294px;
@@ -5298,7 +5300,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .footer_text {
   color: #ffffff;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 21px;
@@ -5308,7 +5310,7 @@ a.text-dark:hover, a.text-dark:focus {
   height: 45px;
   background-color: #8d938d;
   color: #ffffff;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 45px;
@@ -5317,14 +5319,14 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%; }
 
 @media (min-width: 450px) {
-  .footer_logo {
-    margin-bottom: 45px; }
   .footer_text {
-    line-height: 25px; } }
+    line-height: 21px; }
+  .footer {
+    padding: 29px 0px 0px; } }
 
 @media (min-width: 768px) {
   .footer {
-    padding: 78px 0px 0px; } }
+    padding: 50px 0px 0px; } }
 
 .steps {
   margin: 23px auto 33px;
@@ -5392,14 +5394,14 @@ a.text-dark:hover, a.text-dark:focus {
   border-color: #019c5a; }
 
 .step_num {
-  font-family: "Proxima Nova - Semibold";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 20.75px;
   margin: 4px 0px 0px; }
 
 .step_name {
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
   font-weight: 400;
   line-height: 14.75px; }
@@ -5542,7 +5544,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 0rem; }
 
 .btn {
-  font-family: "Proxima Nova - Semibold";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 22px; }
@@ -5600,14 +5602,14 @@ a.text-dark:hover, a.text-dark:focus {
 .form-control {
   height: 29px;
   font-size: 12px;
-  line-height: 30px; }
+  line-height: 14px; }
 
 .range_wrap {
   width: 100%;
   display: flex;
   justify-content: space-between;
   color: #aaaaaa;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 20.75px; }
@@ -5972,7 +5974,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .lising_nav a {
   color: #808080;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 33px;
@@ -5983,7 +5985,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .lising_nav a.active {
   color: #019c5a;
-  font-family: "Proxima Nova - Semibold";
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   border-color: #019c5a; }
 
@@ -6027,7 +6029,7 @@ a.text-dark:hover, a.text-dark:focus {
   line-height: 17px;
   padding: 6px 15px;
   font-size: 14px;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #fff;
   border-color: #019c5a;
   color: #019c5a; }
@@ -6073,7 +6075,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 12px; }
 
 .pageDog_3 .down {
-  width: 210px;
+  width: 185px;
   margin-right: auto;
   margin-left: auto;
   display: block;
@@ -6081,7 +6083,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .pageDashboard .h5 {
   color: #191919;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 400;
   margin: 39px 0px 30px; }
@@ -6131,7 +6133,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 4px 28px;
   background-color: #019c5a;
   border: 1px solid #019c5a;
-  font-family: "Proxima Nova - Semibold";
+  font-family: Arial, Helvetica, sans-serif;
   color: #ffffff; }
 
 .pageRequests .form-group {
@@ -6198,7 +6200,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .pageRequests_suc .wrap {
   width: 272px;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center; }
 
 .pageRequests_suc .cont p {
@@ -6223,7 +6225,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 34px; }
 
 .pageRefer .h4 {
-  font-family: "Proxima Nova - Semibold"; }
+  font-family: Arial, Helvetica, sans-serif; }
 
 .pageRefer .mount .h4 {
   color: #000000;
@@ -6246,12 +6248,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 .pageStep3 .mount b {
   margin-right: 29px;
-  font-family: "Proxima Nova - Semibold";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px; }
 
 .pageStep3 .h5 {
   color: #000000;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 25px;
   font-size: 18px;
   margin: 24px auto 25px; }
@@ -6261,7 +6263,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .pageStep3 .def {
   color: #717171;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20.75px; }
@@ -6271,7 +6273,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .pageStep3 .downanddel {
   color: #000000;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 20.75px; }
@@ -6282,7 +6284,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .pageStep3 td:nth-child(1) {
   color: #000000;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21.75px;
@@ -6295,14 +6297,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 .pageStep3 td:nth-child(3) {
   color: #019c5a;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20.75px; }
 
 .pageStep3 .downanddel a {
   color: #000000;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 20.75px; }
@@ -6330,7 +6332,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .pageStep4 .iconBL {
   color: #000000;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 12px; }
@@ -6349,8 +6351,8 @@ html {
 body {
   background-color: #fdfdfd;
   min-width: 320px;
-  padding-bottom: 350px;
-  font-family: "Proxima Nova"; }
+  padding-bottom: 240px;
+  font-family: Arial, Helvetica, sans-serif; }
 
 button {
   outline: none !important; }
@@ -6395,7 +6397,7 @@ label {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 25px;
-  font-family: "Proxima Nova - Semibold";
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 19px; }
 
 .h5 {
@@ -6412,7 +6414,7 @@ label {
 
 .toggleBt a {
   color: #808080;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 30px;
@@ -6423,7 +6425,7 @@ label {
 
 .toggleBt a.active {
   color: #019c5a;
-  font-family: "Proxima Nova - Semibold";
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   border-color: #019c5a; }
 
@@ -6455,6 +6457,11 @@ label {
   border-bottom: 1px solid #efefef;
   background-color: #ffffff; }
 
+.table.white tr:hover td,
+.table-light tr:hover,
+.table_dog-1 tr:hover {
+  background-color: #e8e8e8; }
+
 .table.white td:nth-child(1) {
   padding: 16px 0px; }
 
@@ -6471,11 +6478,14 @@ label {
   vertical-align: middle;
   display: block; }
 
+.table.white tr td:nth-child(1) {
+  padding-left: 10px; }
+
 .btn-sm, .btn-group-sm > .btn {
   padding: 4px 12px;
   line-height: 20.75px;
   font-size: 14px;
-  font-family: "Proxima Nova"; }
+  font-family: Arial, Helvetica, sans-serif; }
 
 .dateLine {
   padding: 2px 0px 0px;
@@ -6496,13 +6506,13 @@ label {
 .dateLine span {
   line-height: 34px;
   color: #1a1a1a;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 9px;
   font-weight: 400; }
 
 a.down {
   color: #019c5a;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 11px;
@@ -6517,7 +6527,7 @@ a.down {
 
 .abrBL b {
   color: #1a1a1a;
-  font-family: "Proxima Nova - Semibold";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -6526,7 +6536,7 @@ a.down {
 
 .abrBL p {
   color: #1a1a1a;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -6583,7 +6593,7 @@ a.down {
 
 .wrapCenter .h5 {
   text-align: center;
-  font-family: "Proxima Nova - Semibold";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   color: #191919; }
 
@@ -6604,7 +6614,7 @@ a.down {
 
 .textBl p {
   color: #050505;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 12.75px;
@@ -6620,7 +6630,7 @@ a.down {
   text-align: center;
   padding: 1px 6px;
   color: #000000;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 38px;
@@ -6637,7 +6647,7 @@ a.down {
   border-radius: 1px 1px 0 0;
   background-color: #eefff8;
   color: #019c5a;
-  font-family: "Proxima Nova - Semibold";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
   border-left: 2px solid #019c5a; }
@@ -6690,7 +6700,7 @@ a.down {
 
 .thead-light th {
   padding: 6px 35px;
-  font-family: "Proxima Nova - Semibold"; }
+  font-family: Arial, Helvetica, sans-serif; }
 
 .table-light {
   border-radius: 4px;
@@ -6732,7 +6742,7 @@ a.down {
   line-height: 24px;
   margin-bottom: 9px;
   font-size: 18px;
-  font-family: "Proxima Nova - Semibold";
+  font-family: Arial, Helvetica, sans-serif;
   display: block; }
 
 .textCard p {
@@ -6775,14 +6785,14 @@ a.down {
 
 .userBl b {
   color: #000000;
-  font-family: "Proxima Nova - Semibold";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   display: block;
   width: 100%; }
 
 .userBl p {
   color: #8a8a8a;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   display: block;
@@ -6849,7 +6859,7 @@ a.down {
   line-height: 17px; }
 
 .hisBL .status {
-  font-family: "Proxima Nova - Semibold";
+  font-family: Arial, Helvetica, sans-serif;
   color: #18a569;
   line-height: 17px;
   margin: 6px 0px; }
@@ -6881,7 +6891,7 @@ a.down {
 .table_dog-1 thead th {
   background-color: #effbf6;
   color: #303030;
-  font-family: "Proxima Nova - Semibold";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 20.75px; }
@@ -6895,7 +6905,7 @@ a.down {
 
 .table_dog-1 tbody td {
   color: #000000;
-  font-family: "Proxima Nova";
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 14px;
   text-align: center;
   padding: 0px 10px; }
@@ -6949,3 +6959,8 @@ a.down {
 
 .pageList .table td {
   padding: 13px 10px; }
+
+body,
+.dropdown-menu,
+.form-control {
+  color: #000; }
