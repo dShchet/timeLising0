@@ -5,9 +5,12 @@
   "author": "itchief.ru",
   "license": "MIT",
   "dependencies": {
+    "almond": "^0.3.3",
+    "bootstrap": "^4.1.3",
     "jquery": "^3.3.1",
+    "jquery-mousewheel": "^3.1.13",
     "popper.js": "^1.14.4",
-    "bootstrap": "^4.1.3"
+    "select2": "^4.0.6-rc.1"
   },
   "devDependencies": {
     "browser-sync": "^2.24.7",

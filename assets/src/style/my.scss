@@ -90,7 +90,7 @@ label{
 
 .table td {
   color: #000000;
-  font-family: "Proxima Nova";
+  font-family: $font_1;
   font-size: 12px;
   font-weight: 400;
   line-height: 11px;
@@ -595,6 +595,7 @@ a.down {
   // min-height: 100%;
   // display: flex;
 }
+.pageRecovery .btn{    margin-top: 25px;}
 .mainPageWrap{    width: 100vw;
   vertical-align: middle;
   height: 100vh;
@@ -638,7 +639,19 @@ body,
 .form-control{color: #000;}
 
 
-
+// .pageRecovery .h5,
+// .pageEnter 
+.step_num,
+.btBlock a:hover, .btBlock a.active,
+.mount .h4,
+.abrBL b,
+.pageRefer .h4,
+.header .callB b,
+.header_top .h4,
+.h5{    font-weight: 700;}
+.select2-container--default .select2-selection--single{border-color:#ced4da!important;}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{background-color:#019c5a}
+.select2-search__field:focus{outline-color: #019c5a}
 
 
 

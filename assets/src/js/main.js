@@ -15,4 +15,6 @@
 //= ../../../node_modules/bootstrap/js/dist/popover.js
 
 // Импортируем другие js-файлы
+//= ../../../node_modules/bootstrap/js/dist/popover.js
+
 //= my.js
