@@ -650,8 +650,9 @@ body,
 .header_top .h4,
 .h5{    font-weight: 700;}
 .select2-container--default .select2-selection--single{border-color:#ced4da!important;}
-.select2-container--default .select2-results__option--highlighted[aria-selected]{background-color:#019c5a}
-.select2-search__field:focus{outline-color: #019c5a}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{background-color:$green}
+.select2-search__field:focus,
+.select2-container--default .select2-selection--single{outline-color: $green!important}
 
 
 

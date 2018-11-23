@@ -1,13 +1,13 @@
 $(document).ready(function() {
     //данные для первого поля
-    select2_1_data= [
+    data_1= [
         { id: 'Toyota',     text: 'Toyota'     },
         { id: 'Nissan',     text: 'Nissan'     },
         { id: 'Porsche',    text: 'Porsche'    }
     ];
 
     //данные для второго поля, если не выбрано первое
-    select2_default=[
+    data_2_default=[
         { id: 'C-HR',         text: 'C-HR'        },
         { id: 'Tundra',       text: 'Tundra'      },
         { id: 'Yaris',        text: 'Yaris'       },
@@ -26,7 +26,7 @@ $(document).ready(function() {
     ];
 
     //данные для второго поля, если в первом выбрано Toyota
-    select2_2_Toyota= [
+    data_2_Toyota= [
         { id: 'C-HR',    text: 'C-HR'    },
         { id: 'Tundra',  text: 'Tundra'  },
         { id: 'Yaris',   text: 'Yaris'   },
@@ -37,58 +37,56 @@ $(document).ready(function() {
     ];
 
     //данные для второго поля, если в первом выбрано Nissan
-    select2_2_Nissan= [
+    data_2_Nissan= [
         { id: 'Rogue',  text: 'Rogue'  },
         { id: 'Murano', text: 'Murano' },
         { id: 'Altima', text: 'Altima' }
     ];
 
     //данные для второго поля, если в первом выбрано Porsche
-    select2_2_Porsche= [
+    data_2_Porsche= [
         { id: 'Porsche  356', text: 'Porsche 356' },
         { id: 'Porsche  917', text: 'Porsche 917' },
         { id: 'Porsche  959', text: 'Porsche 959' },
         { id: 'Carrera  RS',  text: 'Carrera RS'  },
         { id: 'Spyder',       text: 'Spyder'      }
     ];
-
+ 
 
 
     //инициализация первого поля
-    $('.select2').select2({
-        width: 'resolve',
-        data: select2_1_data
+    $('.select_1').select2({
+        data: data_1
     });
     //инициализация второго поля
-    $('.select2_2').select2({
-        width: 'resolve',
-        data: select2_default
+    $('.select_2').select2({
+        data: data_2_default
     });
-    //смена данных у второо поля при выборе в  первом
-    $('.select2').on('select2:select', function (e) {
-        if(e.params.data.id=="Toyota") {
-            $('.select2_2').select2('destroy');
-            $('.select2_2').select2({
-                width: 'resolve',
-                data: select2_2_Toyota
-            });
-        }
-        if(e.params.data.id=="Nissan") {
-            // $('.select2_2').val(null).trigger('change');
-            // $('.select2_2').select2('destroy');
+    //смена данных у второо поля при выборе в первом
+    $('.select_1').on('select2:select', function (e) {
 
-            $('.select2_2').trigger({
-                type: 'select2:select',
-                data: select2_2_Nissan
-            });
-        }
-        if(e.params.data.id=="Porsche"){
-            $('.select2_2').trigger({
-                type: 'select2:select',
-                params: {data: select2_2_Porsche}
-            });
-        }
+        var dataVal='data_2_'+ e.params.data.id;
+        $('.select_2').html('').select2({data: window[dataVal]});
+        /* Или же, если значения вариантов в первом поле не совпадают 
+            с окончанием названий массивов для второго поля, 
+            то вместо этих двух строчек следует обрабатывать каждый вариант отдельно
+        */
+        // if(e.params.data.id=="Toyota") {
+        //     $('.select_2').html('').select2({
+        //         data: data_2_Toyota
+        //     });
+        // }
+        // if(e.params.data.id=="Nissan") {
+        //     $('.select_2').html('').select2({
+        //         data: data_2_Nissan
+        //     });
+        // }
+        // if(e.params.data.id=="Porsche"){
+        //     $('.select_2').html('').select2({
+        //         data: data_2_Porsche
+        //     });
+        // }
+
     });
-
 });
 

@@ -7456,5 +7456,6 @@ body,
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
   background-color: #019c5a; }
 
-.select2-search__field:focus {
-  outline-color: #019c5a; }
+.select2-search__field:focus,
+.select2-container--default .select2-selection--single {
+  outline-color: #019c5a !important; }
