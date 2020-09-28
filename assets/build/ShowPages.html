@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet"> 
+    <title>TimeLizing</title>
+</head>
+<body>
+<style>
+  * {
+    box-sizing: border-box;
+    font-family: 'Ubuntu Condensed', sans-serif;
+  }
+  html {
+    overflow: auto;
+  }
+  body {
+    margin: 0;
+    overflow: auto;
+    padding-bottom: 20px;
+    background-color: #330033;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Ccircle fill='%2306B' cx='45' cy='45' r='10'/%3E%3Cg fill='%23800' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='10'/%3E%3Ccircle cx='90' cy='90' r='10'/%3E%3Ccircle cx='90' cy='0' r='10'/%3E%3Ccircle cx='0' cy='0' r='10'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  #buttonWrap {
+    width: 170px;
+    float: left;
+  }
+  #buttonWrap>div {}
+  .group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header {
+    width: 100%;
+    overflow: auto;
+  }
+  #framWrap {
+    float: right;
+    width: calc(100% - 170px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 15px;
+    position: fixed;
+    right: 0px;
+    align-items: start;
+  }
+  #title {
+    font-size: 45px;
+    float: left;
+    background: #ffeb00;
+    position: relative;
+    padding: 5px 0px 5px 20px;
+    line-height: 50px;
+  }
+  .title{color: white;
+    padding: 0px 10px;
+    font-size: 25px;
+    margin: 10px 0px 10px;}
+  #title:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 60px solid #ffeb00;
+    border-right: 60px solid transparent;
+    left: 100%;
+    top: 0px;
+  }
+  #titlePage {
+    background: #ffffff;
+    position: relative;
+    padding: 5px 10px 0px 10px;
+    width: fit-content;
+  }
+  #titlePage:before {
+    content: '';
+    position: absolute;
+  }
+  #codeLink {
+    float: right;
+    font-size: 45px;
+    background: #ffffff;
+    position: relative;
+    padding: 5px 5px 5px 0px;
+    text-decoration: none;
+    line-height: 50px;
+    color: #000;
+    transition: 0.2s;
+  }
+  #codeLink p {
+    margin: 0;
+    float: left;
+  }
+  #codeLink svg{
+    position: relative;
+    left: -5px;
+    top: 2px;
+    width: 41px;
+    height: 36px;
+    fill: #000;
+    transition: 0.2s;}
+  #codeLink:hover svg {
+    fill: #0000EE;
+  }
+  #codeLink:before {
+    content: '';
+    position: absolute;
+    border-top: 60px solid #ffffff;
+    border-left: 60px solid transparent;
+    left: -60px;
+    top: 0px;
+  }
+  #codeLink:hover {
+    color: #0000EE;
+  }
+  #pageUrl {
+    background: #ffffff;
+    position: relative;
+    padding: 5px 30px 5px 0px;
+    width: fit-content;
+    box-shadow: 1px -2px 9px 0 #ffffff;
+    left: 31px;
+    color: #00009b;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  #pageUrl:before {
+    content: '';
+    position: absolute;
+    width: 42px;
+    height: 43px;
+    left: -21px;
+    top: 8px;
+    background: white;
+    transform: rotate(45deg);
+    z-index: -1;
+    box-shadow: 0 0px 20px 0 #ffffff;
+    transition: 0.3s;
+  }
+  #pageUrl:after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='16px' height='16px' viewBox='0 0 512.000000 512.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,512.000000) scale(0.100000,-0.100000)'%0Afill='%2300009b' stroke='none'%3E%3Cpath d='M2930 5104 c-124 -54 -183 -188 -131 -299 12 -26 135 -156 355 -375%0Al336 -335 -779 -780 c-428 -429 -802 -811 -830 -850 -29 -38 -66 -99 -84 -135%0A-29 -59 -32 -73 -32 -160 0 -85 3 -101 29 -150 37 -71 137 -170 206 -205 40%0A-20 75 -29 126 -33 109 -7 195 26 329 126 33 25 411 395 840 823 l780 779 345%0A-345 c376 -376 384 -382 480 -373 106 10 191 97 210 213 13 80 13 1698 0 1788%0A-19 129 -94 235 -210 294 l-55 28 -940 2 c-820 2 -944 0 -975 -13z'/%3E%3Cpath d='M565 4480 c-240 -26 -449 -191 -533 -421 l-27 -74 -3 -1718 c-2%0A-1545 -1 -1725 14 -1780 58 -226 230 -398 464 -464 62 -17 147 -18 1755 -18%0A1608 0 1693 1 1755 18 233 66 398 230 466 462 15 54 18 130 21 729 l5 669%0A-319 318 c-174 176 -321 319 -325 319 -5 0 -8 -421 -8 -935 l0 -935 -1595 0%0A-1595 0 0 1595 0 1595 935 0 c514 0 935 3 935 8 0 4 -143 150 -318 325 l-318%0A317 -619 -1 c-341 -1 -651 -5 -690 -9z'/%3E%3C/g%3E%3C/svg%3E");
+    top: 7px;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+  }
+  #pageUrl:hover{color: #0000EE;
+    box-shadow: 0px 0px 30px 0 #ffffff;}
+  #pageUrl:hover:before{
+    box-shadow: 0 0px 30px 0 #ffffff;}
+  #pageUrl:hover:after{
+    background-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='16px' height='16px' viewBox='0 0 512.000000 512.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,512.000000) scale(0.100000,-0.100000)'%0Afill='%230000EE' stroke='none'%3E%3Cpath d='M2930 5104 c-124 -54 -183 -188 -131 -299 12 -26 135 -156 355 -375%0Al336 -335 -779 -780 c-428 -429 -802 -811 -830 -850 -29 -38 -66 -99 -84 -135%0A-29 -59 -32 -73 -32 -160 0 -85 3 -101 29 -150 37 -71 137 -170 206 -205 40%0A-20 75 -29 126 -33 109 -7 195 26 329 126 33 25 411 395 840 823 l780 779 345%0A-345 c376 -376 384 -382 480 -373 106 10 191 97 210 213 13 80 13 1698 0 1788%0A-19 129 -94 235 -210 294 l-55 28 -940 2 c-820 2 -944 0 -975 -13z'/%3E%3Cpath d='M565 4480 c-240 -26 -449 -191 -533 -421 l-27 -74 -3 -1718 c-2%0A-1545 -1 -1725 14 -1780 58 -226 230 -398 464 -464 62 -17 147 -18 1755 -18%0A1608 0 1693 1 1755 18 233 66 398 230 466 462 15 54 18 130 21 729 l5 669%0A-319 318 c-174 176 -321 319 -325 319 -5 0 -8 -421 -8 -935 l0 -935 -1595 0%0A-1595 0 0 1595 0 1595 935 0 c514 0 935 3 935 8 0 4 -143 150 -318 325 l-318%0A317 -619 -1 c-341 -1 -651 -5 -690 -9z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  #iframe {
+    background: white;
+    box-shadow: 0 0px 20px 0 #ffffff;
+    width: calc(100% - 20px);
+  }
+  .buttonLink {
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    background: white;
+    border: 1px solid grey;
+    border-left: none;
+    padding: 5px 10px;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+    margin-top: -1px;
+    transition: 0.3s;
+  }
+  .buttonLink.active,
+  .buttonLink:hover {
+    z-index: 1;
+    background: #ffeb00;
+  }
+</style>
+    <header>
+        <div id="title"></div>
+        <a id="codeLink" href=''><p><?xml version="1.0" encoding="iso-8859-1"?>
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="45px" height="45px" viewBox="0 0 438.549 438.549" style="enable-background:new 0 0 438.549 438.549;"
+                 xml:space="preserve"><g><path d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.456,259.057,5.365,219.271,5.365
+                    c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
+                    c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996
+                    c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136
+                    c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559
+                    c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559
+                    c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997
+                    c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851
+                    c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136
+                    c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41
+                    c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126
+                    c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817
+                    c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994
+                    c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849
+                    c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24
+                    c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979
+                    c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146
+                    c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995
+                    c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906
+                    C438.536,184.851,428.728,148.168,409.132,114.573z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></p>Code</a>
+    </header>
+    <div id="buttonWrap"></div>
+    <div id="framWrap">
+        <a id="pageUrl" href=''></a>
+        <iframe  id='iframe' src="" frameborder="0"></iframe>
+    </div>
+<script>
+    const title= 'TimeLizing';
+    const baseUrl='https://dshchet.github.io/timeLising/';
+    const codeUrl='https://github.com/dShchet/timeLising/';
+    const data=[
+        {
+            name:'Основные',
+            links:[
+                {
+                    title:'Договор страхования',
+                    shortTitle:'Cтрахование',
+                    url:'dogovor_1.html'
+                },
+                {
+                    title:'Договор',
+                    shortTitle:'Договор',
+                    url:'dogovor_2.html'
+                },
+                {
+                    title:'Договора страхования (таблица)',
+                    shortTitle:'Таблица',
+                    url:'dogovor_3.html'
+                },
+                {
+                    title:'Запросы',
+                    shortTitle:'Запросы',
+                    url:'requests.html'
+                },
+                {
+                    title:'Лизинг договор 2',
+                    shortTitle:'договор 2',
+                    url:'lizing.html'
+                },
+                {
+                    title:'Профиль',
+                    shortTitle:'Профиль',
+                    url:'profile.html'
+                },
+                {
+                    title:'Дашборд',
+                    shortTitle:'Дашборд',
+                    url:'dashboard.html'
+                },
+            ],
+        },{
+            name:'Побочные',
+            links:[
+                {
+                    title:'Вход',
+                    shortTitle:'Вход',
+                    url:'enter.html'
+                },
+                {
+                    title:'Восстановление',
+                    shortTitle:'Восстановление',
+                    url:'recovery.html'
+                },
+                {
+                    title:'Восстановление сообщение',
+                    shortTitle:'Сообщение ',
+                    url:'enter_suc.html'
+                },
+                {
+                    title:'Запросы Успех',
+                    shortTitle:'Запросы Успех',
+                    url:'requests_suc.html'
+                },
+                {
+                    title:'Список заявок',
+                    shortTitle:'Список заявок',
+                    url:'list.html'
+                },
+                {
+                    title:'Справка',
+                    shortTitle:'Справка',
+                    url:'refer.html'
+                },
+                {
+                    title:'Этап 1',
+                    shortTitle:'Этап 1',
+                    url:'step_1.html'
+                },
+                {
+                    title:'Этап 2',
+                    shortTitle:'Этап 2',
+                    url:'step_2.html'
+                },
+                {
+                    title:'Этап 3',
+                    shortTitle:'Этап 3',
+                    url:'step_3.html'
+                },
+                {
+                    title:'Этап 4',
+                    shortTitle:'Этап 4',
+                    url:'step_4.html'
+                },
+                {
+                    title:'Этап 5 успех',
+                    shortTitle:'Этап 5',
+                    url:'success.html'
+                },],
+        },
+    ];
+    //making left list of Links
+    data.forEach((group, groupIndex) => {
+        //making links subgroups
+        let GroupWrap = document.createElement("div")
+        GroupWrap.classList.add("group");
+        let GroupTitle = document.createElement("p");
+        GroupTitle.classList.add("title");
+        GroupTitle.innerHTML = group.name;
+        GroupWrap.appendChild(GroupTitle);
+        //making each links
+        group.links.forEach((el, elIndex)=>{
+            let buttonLink = document.createElement("div");
+            buttonLink.innerHTML = el.shortTitle;
+            //id for setting active class
+            let id=`id${groupIndex}${elIndex}`;
+            buttonLink.setAttribute('id', id);
+            buttonLink.classList.add("buttonLink");
+            buttonLink.onclick = function() {
+              let activeList = document.getElementsByClassName('active');
+              //there is will be always only one active link
+              activeList[0].classList.remove('active');
+              document.getElementById(id).classList.add('active');
+              document.getElementById('pageUrl').innerHTML = (baseUrl+ el.url);
+              document.getElementById('pageUrl').setAttribute('href', (baseUrl+ el.url))
+              document.getElementById('iframe').setAttribute('src', baseUrl+el.url);
+            }
+            GroupWrap.appendChild(buttonLink);
+        });
+        document.getElementById('buttonWrap').appendChild(GroupWrap);
+    });
+    //setting html
+    document.getElementById('title').innerHTML = title;
+    document.getElementById('codeLink').setAttribute('href', codeUrl)
+    document.getElementById('pageUrl').innerHTML = (baseUrl+data[0].links[0].url);
+    document.getElementById('pageUrl').setAttribute('href', (baseUrl+data[0].links[0].url))
+    document.getElementById('id00').classList.add('active');
+    //making right Iframe
+    let iframe= document.getElementById('iframe');
+    //checking correct Iframe height 
+    function setIframeSize (){
+        let pageYOffset = window.pageYOffset;
+        // let windowWidth = window.innerWidth;
+        let windowHeght = window.innerHeight;
+        let frameHeght;
+        // let transform = (windowWidth<1350) ? windowWidth/1350 : 1;
+        let scrolltop;
+        frameHeght = window.innerHeight + pageYOffset - 150
+        scrolltop= 80 - pageYOffset;
+        if(pageYOffset>80) {
+            scrolltop= 0 ;
+            frameHeght = window.innerHeight  - 70};
+        document.getElementById('framWrap').style.top = `${scrolltop}px`;
+        iframe.setAttribute('height', frameHeght);
+        // iframe.style.transform=`scale(${transform})`;
+    }
+    window.addEventListener('scroll', () => setIframeSize());
+    window.addEventListener('resize', () => setIframeSize(), true);
+    setIframeSize ();
+    iframe.setAttribute('src', (baseUrl+data[0].links[0].url));
+</script>
+</body>
+</html>
